@@ -1,0 +1,43 @@
+h1 {
+	text-align: center;
+}
+img {
+	padding: 10px;
+	margin: 0 auto;
+}
+a {
+	padding: 10px;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 5px;
+	background: rgb(243,243,243);
+}
+.header {
+	margin: 0 auto;
+	background: rgb(196,222,252);
+}
+.header h1{
+	margin: 0 auto;
+	text-align: center;
+}
+.nav {
+	margin: 0 auto;
+	background: rgb(243,243,243);
+}
+.nav a {
+	margin: 0 auto;
+}
+.mau {
+	margin: 0 auto;
+	background: rgb(196,222,252);
+}
+.rey {
+	margin: 0 auto;
+	background: rgb(243,243,243);
+}
+.asp {
+	margin: 0 auto;
+	background: rgb(196,222,252);
+}
