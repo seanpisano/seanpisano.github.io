@@ -57,4 +57,10 @@ h1 {
 .asp p {
 	text-align: left;
     padding: 20px 40px;	
-}	
+}
+.footer{
+	margin: 0 auto;
+	background: #f4f3f4;
+	text-align: center;
+	width: 925px;
+}
