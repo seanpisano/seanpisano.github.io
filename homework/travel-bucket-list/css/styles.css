@@ -1,6 +1,5 @@
 h1 {
 	text-align: center;
-	padding: 15px 0px 0px 0px;
 }
 .container {
 	width: 960px;
@@ -18,13 +17,13 @@ h1 {
 }
 .nav {
 	margin: 0 auto;
+	padding: 20px 0px 0px 0px;
 	background: #f4f3f4;
 	text-align: center;
 	width: 925px;
 }
 .nav a {
     margin: 5px;
-    padding: 10px;
     text-decoration: none;
     color: #000000;
 }
@@ -38,6 +37,9 @@ h1 {
 	text-align: left;
     padding: 20px 40px;	
 }
+.mau h1 {
+	padding: 15px 0px 0px 0px;	
+}
 .rey {
 	margin: 0 auto;
 	background: #c3f3e4;
@@ -48,6 +50,9 @@ h1 {
 	text-align: left;
     padding: 20px 40px;	
 }
+.rey h1 {
+	padding: 15px 0px 0px 0px;	
+}
 .asp {
 	margin: 0 auto;
 	background: #c5dffc;
@@ -57,6 +62,9 @@ h1 {
 .asp p {
 	text-align: left;
     padding: 20px 40px;	
+}
+.asp h1 {
+	padding: 15px 0px 0px 0px;	
 }
 .footer{
 	margin: 0 auto;
