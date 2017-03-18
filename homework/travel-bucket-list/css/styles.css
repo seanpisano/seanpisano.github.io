@@ -1,47 +1,60 @@
 h1 {
 	text-align: center;
-}
-img {
-	padding: 10px;
-	margin: 0 auto;
-}
-a {
-	padding: 10px;
+	padding: 15px 0px 0px 0px;
 }
 .container {
 	width: 960px;
 	margin: 0 auto;
-	padding: 5px;
+	padding: 10px;
 	background: #f4f3f4;
 }
 .header {
 	margin: 0 auto;
 	background: #01cba0;
-}
-.header h1{
-	margin: 0 auto;
 	text-align: center;
+	padding: 10px 0px;
+    color: #ffffff;
+    width: 925px;	
 }
 .nav {
 	margin: 0 auto;
 	background: #f4f3f4;
 	text-align: center;
+	width: 925px;
 }
 .nav a {
-	margin: 0 auto;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
 }
 .mau {
 	margin: 0 auto;
 	background: #c5dffc;
-	text-align: center;	
+	text-align: center;
+	width: 925px;	
+}
+.mau p {
+	text-align: left;
+    padding: 20px 40px;	
 }
 .rey {
 	margin: 0 auto;
 	background: #c3f3e4;
-	text-align: center;	
+	text-align: center;
+	width: 925px;		
+}
+.rey p {
+	text-align: left;
+    padding: 20px 40px;	
 }
 .asp {
 	margin: 0 auto;
 	background: #c5dffc;
-	text-align: center;	
+	text-align: center;
+	width: 925px;	
 }
+.asp p {
+	text-align: left;
+    padding: 20px 40px;	
+}	
