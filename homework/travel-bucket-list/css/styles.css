@@ -12,11 +12,11 @@ a {
 	width: 960px;
 	margin: 0 auto;
 	padding: 5px;
-	background: rgb(243,243,243);
+	background: #f4f3f4;
 }
 .header {
 	margin: 0 auto;
-	background: rgb(196,222,252);
+	background: #01cba0;
 }
 .header h1{
 	margin: 0 auto;
@@ -24,20 +24,24 @@ a {
 }
 .nav {
 	margin: 0 auto;
-	background: rgb(243,243,243);
+	background: #f4f3f4;
+	text-align: center;
 }
 .nav a {
 	margin: 0 auto;
 }
 .mau {
 	margin: 0 auto;
-	background: rgb(196,222,252);
+	background: #c5dffc;
+	text-align: center;	
 }
 .rey {
 	margin: 0 auto;
-	background: rgb(243,243,243);
+	background: #c3f3e4;
+	text-align: center;	
 }
 .asp {
 	margin: 0 auto;
-	background: rgb(196,222,252);
+	background: #c5dffc;
+	text-align: center;	
 }
