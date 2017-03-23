@@ -1,0 +1,60 @@
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.kitty-meow-meow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.firstcharacter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+#container {}
+header {}
+title {}
+title h1 {}
+title h2 {}
+header nav a {
+	display: inline-block;
+	background-color: #000000;
+	color: #333333;
+	width: 200px;
+	border-right: 1px solid #666666;
+}
+main {}
+main section {}
+main section h2 {}
+main section img {}
+main section p {}
+main section a {}
+main section a:hover {}
+
+aside {}
+aside section {}
+aside section title {}
+aside section h2 {}
+aside section img {}
+aside section p {}
+aside section a {}
+aside section a:hover {}
+aside section ul {}
+aside section ul li {}
+
+footer nav {}
+footer nav a {}
+footer nav a:hover{}
+footer copyright {}
+
+
+
+
