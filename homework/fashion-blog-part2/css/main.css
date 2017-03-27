@@ -72,7 +72,6 @@ header nav a {
 main {
   width: 645px;
 }
-main section {}
 main section h2 {
   font-size: 35px;
   color: #CFD3D6;
@@ -89,10 +88,6 @@ main section h2 {
   padding: 0px 0px 10px 0px;
   margin: 0px 0px 0px 0px;
 }
-main section img {}
-main section p {}
-main section a {}
-main section a:hover {}
 .mainlink {
   color: #DE1308;
   text-align: right;
@@ -108,17 +103,12 @@ aside section {
   padding: 10px;
   margin: 55px 0px 0px 0px;
 }
-aside section title {}
-aside section h2 {}
-aside section img {}
 aside section p {
   color: #A99B8F;
 }
-aside section a {}
-aside section a:hover {}
-aside section ul {}
+
 aside section ul li {
-    color: #A99B8F;
+  color: #A99B8F;
   list-style-type: disc;
 }
 aside section ul li span{
@@ -133,14 +123,7 @@ aside section ul li span{
 footer {
   width: 960px;
 }
-footer nav {}
 footer nav a {
   color: #DE1308;
   padding 10px 0px 10px 0px;
 }
-footer nav a:hover{}
-footer copyright {}
-
-
-
-
