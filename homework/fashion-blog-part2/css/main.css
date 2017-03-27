@@ -1,3 +1,10 @@
+body {
+  margin: auto;
+  width: 50%;
+}
+img {
+  width: 100%;
+}
 .float-left {
 	float: left;
 }
@@ -9,49 +16,128 @@
   display: table;
   clear: both;
 }
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
 .firstcharacter {
-  color: #903;
+  color: #DDDDDD;
   float: left;
-  font-family: Georgia;
+  font-family:  'Lato';
   font-size: 75px;
   line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  padding: 4px 3px 0px 8px;
 }
-#container {}
-header {}
-title {}
-title h1 {}
-title h2 {}
+
+#container {
+  width: 960px;
+  margin: auto 0;
+}
+header {
+  width: 960px;
+}
+header h1 {
+  font-size: 45px;
+  color: #de1300;
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: 300;
+  padding: 40px 0px 5px 0px;
+  margin: 0px 0px 0px 0px;
+}
+header h3 {
+  font-size: 25px;
+  color: #87909A;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 300;
+}
+header nav {
+  background-color: #FBF5E7;
+}
 header nav a {
-	display: inline-block;
-	background-color: #000000;
-	color: #333333;
-	width: 200px;
-	border-right: 1px solid #666666;
+    display: inline-block;
+    background-color: #000000;
+    color: #FBF5E7;
+    width: 140px;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
 }
-main {}
+main {
+  width: 645px;
+}
 main section {}
-main section h2 {}
+main section h2 {
+  font-size: 35px;
+  color: #CFD3D6;
+  font-family: 'Lato';
+  font-weight: 300;
+  padding: 45px 0px 5px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.sectitle {
+  font-size: 30px;
+  color: #261F16;
+  font-family: 'Lato';
+  font-weight: 400;
+  padding: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+}
 main section img {}
 main section p {}
 main section a {}
 main section a:hover {}
-
-aside {}
-aside section {}
+.mainlink {
+  color: #DE1308;
+  text-align: right;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+}
+aside {
+  width: 300px
+}
+aside section {
+  border-bottom: 1px solid #A99B8F;
+  padding: 10px;
+  margin: 55px 0px 0px 0px;
+}
 aside section title {}
 aside section h2 {}
 aside section img {}
-aside section p {}
+aside section p {
+  color: #A99B8F;
+}
 aside section a {}
 aside section a:hover {}
 aside section ul {}
-aside section ul li {}
-
+aside section ul li {
+    color: #A99B8F;
+  list-style-type: disc;
+}
+aside section ul li span{
+  color: #DE1308;
+  list-style-type: disc;
+}
+.asidetitle {
+  color: #A99B8F;
+  padding: 0px 0px 0px 0px
+  margin: 0px 0px 0px 0px;
+}
+footer {
+  width: 960px;
+}
 footer nav {}
-footer nav a {}
+footer nav a {
+  color: #DE1308;
+  padding 10px 0px 10px 0px;
+}
 footer nav a:hover{}
 footer copyright {}
 
