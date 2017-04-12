@@ -8,7 +8,8 @@
 
 
 $('.row').click(function (){
-$(this).find('.wrapper').css('display', 'block');	
+//$(this).find('.wrapper').css('display', 'block');
+$(this).find('.wrapper').slideToggle()	
 }
 )
 
