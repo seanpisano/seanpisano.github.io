@@ -6,6 +6,12 @@ $('#arrow-up').click(function (event) {
 if (total == -20) {
 		$('#masterbox').css('top', '-770px');
 		$('#tempbox').css('top', '-485px');
+
+	//$('#someDiv').append('<p>Appended paragraph</p>')
+	//$('#someDiv').prepend('<p>Prepended paragraph</p>')
+	//$('#someDiv').before('<p>Before paragraph</p>')
+	//$('#someDiv').after('<p>After paragraph</p>')
+
 	} else if (total == -15){
 		$('#masterbox').css('top', '-750px');
 		$('#tempbox').css('top', '-468px');
