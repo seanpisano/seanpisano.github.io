@@ -1,0 +1,56 @@
+<div class="container">
+  <h1>Add Text</h1>
+  <input id="text-input" type="text"/>
+  <button id="append">Append</button>
+  <button id="remove">Remove</button>
+  <hr />
+  
+  <div id="target"></div>
+</div>
+
+body {
+  font-size: 18px;
+  background: blue;
+}
+
+.container {
+  background: rgb(222,222,222);
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 15px 15px 15px black;
+}
+
+p {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  box-shadow: 5px 5px 3px black;
+}
+
+// Expected User Flow:
+// 1. User enters text into #text-input
+// 2. User clicks #append: <p> containing the text is appended to #target and #text-input is cleared
+// 3. User clicks #remove; call .empty() on #target
+
+// 5 bugs total!
+
+// Bonus: Once 10 <p> tags have been added, change background-color of <body> and disable the #append button. 
+
+// Ultra Bonus: If user clicks #remove, renable the #append button and change the background-color of <body> back to blue
+
+$('#append').click(function () {
+  var someNewText = $('#text-input').val();
+  
+  appendText(someNewText);
+})
+
+$('#remove').click(function () {
+  $('#target').empty();
+})
+
+function appendText (text) {
+  $('#target').append('<p>' + text + '</p>');
+}
