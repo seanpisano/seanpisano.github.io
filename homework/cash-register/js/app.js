@@ -20,6 +20,8 @@
 // 7: Empty the input in #newEntry (clear it out)
 // BONUS 8: If the user does not enter a number, 
 //do not calculate and alert them!
+$(document).ready(function() {
+
 var total = 0;
 $('#entry').submit(
 	function (event) {
@@ -34,4 +36,4 @@ $('#entry').submit(
   	$('#newEntry').val('');
 })
 
-
+})
