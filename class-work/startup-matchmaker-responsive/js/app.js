@@ -4,16 +4,8 @@ $(document).ready(function () {
 		console.log($(window).width())
 	})
 
-//1. click event on #burger
-
-
-$('#burger').click (function () {
-	//2.slideToggle  on #moblle-nav.
+$('#taco').click (function () {
 	$('#mobile-nav').slideToggle();
-
-});
-
-
-
+	});
 
 })
