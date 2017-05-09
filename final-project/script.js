@@ -14,6 +14,58 @@
  //	map: map,
 // });
 
+
+$.ajax({
+    type: 'GET',
+    url: 'https://api.untappd.com/v4/beer/info/3839',
+    success: function (response) {
+    console.log(response)
+ //     var firstStation = response[0];
+ //     console.log(response [0])
+//$('#container')
+//.append('<div>' + firstStation.doing_business_as_dba + '</div>')
+//.append('<div>Bikes Available: ' + firstStation.city + '</div>')
+//.append('<div>Spaces Free: ' + firstStation.premises_name + '</div>')
+  
+
+//create this loop  
+//response.forEach(function (station) {
+
+//$('#container')
+// .append('<div>' + station.doing_business_as_dba + '</div>')
+// .append('<div>City: ' + station.city + '</div>')
+// .append('<div>Place name: ' + station.premises_name+ '</div>')
+// .append('<hr>');
+
+//console.log(station);
+
+ //var marker = new google.maps.Marker({
+ // position: {
+//    lat: station.latitude,
+//    lng: station.longitude,
+//  },
+//  map: map,
+//      })
+ //   })
+  },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //$.ajax({
  // 	type: 'GET',
  // 	url: 'http://api.citybik.es/citi-bike-nyc.json',
@@ -90,37 +142,3 @@
 //});
 
 
-$.ajax({
-  	type: 'GET',
-  	url: 'https://api.untappd.com/v4/beer/info/3839',
-  	success: function (response) {
- 		console.log(response)
- // 		var firstStation = response[0];
- // 		console.log(response [0])
-//$('#container')
-//.append('<div>' + firstStation.doing_business_as_dba + '</div>')
-//.append('<div>Bikes Available: ' + firstStation.city + '</div>')
-//.append('<div>Spaces Free: ' + firstStation.premises_name + '</div>')
-	
-
-//create this loop	
-//response.forEach(function (station) {
-
-//$('#container')
-// .append('<div>' + station.doing_business_as_dba + '</div>')
-// .append('<div>City: ' + station.city + '</div>')
-// .append('<div>Place name: ' + station.premises_name+ '</div>')
-// .append('<hr>');
-
-//console.log(station);
-
- //var marker = new google.maps.Marker({
- //	position: {
-//		lat: station.latitude,
-//		lng: station.longitude,
-//	},
-// 	map: map,
-//			})
- //		})
-	},
-});
