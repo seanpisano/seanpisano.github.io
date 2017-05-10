@@ -5,13 +5,33 @@ html, body {
 }
 
 #map {
-  height: 100%;
+  	height: 50%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
 #map {
-    height: 100%;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+#container{
+	width: 50%;
+	margin: 0 auto;
+}
+#beer {
+    float: left;
+    width: 200px;
+    background-color: #e7a61a;
+    border-radius: 12px 9px 49px 40px;
+    -moz-border-radius: 12px 9px 49px 40px;
+    -webkit-border-radius: 12px 9px 49px 40px;
+    border: 5px solid #000000;
+    padding: 10px;
+    margin: 10px;
+    color: #ffffff;
 }
 /* Optional: Makes the sample page fill the window. */
 html, body {
