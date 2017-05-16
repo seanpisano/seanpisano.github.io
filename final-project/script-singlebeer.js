@@ -17,7 +17,7 @@ map: map,
 //Venue section
 
 $.ajax({
-ype: 'GET',
+type: 'GET',
 url: 'https://api.untappd.com/v4/beer/checkins/179?client_id=99506217035F59F9B0F16CE0841A88C4B27618F8&client_secret=667D5C8C35194D7CE4DBD863917D01A4207DF777',
 success: function (response) {
 //the loop  

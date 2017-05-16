@@ -3,10 +3,21 @@ html, body {
   margin: 0;
   padding: 0;
 }
+#brewery-wrapper{
+position: relative;
+}
+
+#brewery-content{
+width: 58%;
+    float: left;
+    margin-left: 2%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
 
 #map {
   	height: 50%;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -14,8 +25,14 @@ html, body {
        * element that contains the map. */
 #map {
     height: 50%;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .doorknob {
 		margin: 0 auto;
@@ -23,7 +40,7 @@ html, body {
 		padding: 10px;
 }
 #container{
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
 }
 #beer {
