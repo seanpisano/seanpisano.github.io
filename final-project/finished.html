@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Now Amazing Webpage</title>
+  <meta charset="UTF-8">
+  <link href="style.css" rel='stylesheet'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="./slick/slick.css" rel="stylesheet" type="text/css">
+  <link href="./slick/slick-theme.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+
+
+     * {
+       box-sizing: border-box;
+     }
+
+     .slider {
+         width: 50%;
+         margin: 100px auto;
+     }
+
+     .slick-slide {
+       margin: 0px 20px;
+     }
+
+     .slick-slide img {
+       width: 100%;
+     }
+
+     .slick-prev:before,
+     .slick-next:before {
+         color: black;
+     }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <section class="slider-nav slider">
+    <div><img alt="Alphabet City Brewing Company" src="images/alphabet-city-logo.png" width="200px"></div>
+    <div><img alt="Big Alice Brewing" src="images/big-alice.png" width="200px"></div>
+    <div><img alt="Braven Brewing Company" src="images/braven-logo.png" width="200px"></div>
+    <div><img alt="Bridge and Tunnel Brewery" src="images/bridge-and-tunnel-logo.png" width="200px"></div>
+    <div><img alt="The Bronx Brewery" src="images/the-bronx-logo.png" width="200px" style="background-color: #000;"></div>
+    <div><img alt="Brooklyn Brewery" src="images/brooklyn-brewery-logo.png" width="200px"></div>
+    <div><img alt="Chelsea Craft Brewing Co." src="images/chelsea-logo.png" width="200px"></div>
+    <div><img alt="Evil Twin Brewing" src="images/evil-twin-logo.png" width="200px"></div>
+    <div><img alt="Finback Brewery" src="images/finback-logo.png" width="200px" style="background-color: #000;"></div>
+    <div><img alt="Flagship Brewing Company" src="images/flagship-logo.png" width="200px"></div>
+    <div><img alt="Great South Bay Brewery" src="images/great-south-logo.png" width="200px"></div>
+    <div><img alt="Greenpoint Beer & Ale Company" src="images/greenpoint-logo.png" width="200px"></div>
+    <div><img alt="Kelso" src="images/kelso-logo.png" width="200px"></div>
+    <div><img alt="Grimm Artisanal Ales" src="images/grimm-logo.png" width="200px"></div>
+    <div><img alt="Gun Hill Brewing Company" src="images/gun-hill-logo.png" width="200px"></div>
+    <div><img alt="Interboro Spirits and Ales" src="images/interboro-logo.png" width="200px"></div>
+    <div><img alt="Kings County Brewers Collective" src="images/kings-county-logo.png" width="200px"></div>
+    <div><img alt="LIC Beer Project" src="images/lic-logo.png" width="200px"></div>
+    <div><img alt="Other Half Brewing Company" src="images/other-half-logo.png" width="200px"></div>
+    <div><img alt="Radiant Pig Craft Beers" src="images/radiant-pig-logo.png" width="200px"></div>
+    <div><img alt="Rockaway Brewing Company" src="images/rockaway-logo.png" width="200px"></div>
+    <div><img alt="SingleCut Beersmiths" src="images/singlecut-logo.png" width="200px"></div>
+    <div><img alt="Sixpoint Craft Ales" src="images/sixpoint-logo.png" width="200px"></div>
+    <div><img alt="Staten Island Beer Company" src="images/staten-island-logo.png" width="200px"></div>
+    <div><img alt="Third Rail Beer" src="images/third-rail-logo.png" width="200px" style="background-color: #000;"></div>
+    <div><img alt="Threes Brewing" src="images/threes-logo.png" width="200px"></div>
+    <div><img alt="Transmitter Brewing" src="images/transmitter-logo.png" width="200px"></div>
+  </section>
+  <section class="slider-for slider">
+
+    <div id="22243">
+      <div id="brewery-content">
+        <h1>Alphabet City Brewing Company</h1>
+        https://untappd.com/w/alphabet-city-brewing-company/22243
+        <div id="container22243"></div>
+      </div>
+    </div>
+
+    <div id="49805">
+      <div id="brewery-content">
+        <h1>Big Alice Brewing</h1>
+        https://untappd.com/w/big-alice-brewing-company/49805
+        <div id="container49805"></div>
+      </div>
+    </div>
+
+    <div id="114457">
+      <div id="brewery-content">
+        <h1>Braven Brewing Company</h1>
+        https://untappd.com/w/braven-brewing-company/114457
+        <div id="container114457"></div>
+      </div>
+    </div>
+
+    <div id="3877986">
+      <div id="brewery-content">
+        <h1>Bridge and Tunnel Brewery</h1>
+        https://untappd.com/v/bridge-and-tunnel-brewery/3877986
+        <div id="container3877986"></div>
+      </div>
+    </div>
+
+    <div id="15784">
+      <div id="brewery-content">
+        <h1>The Bronx Brewery</h1>
+        https://untappd.com/w/the-bronx-brewery/15784
+        <div id="container15784"></div>
+      </div>
+    </div>
+
+    <div id="259">
+      <div id="brewery-content">
+        <h1>Brooklyn Brewery</h1>
+        https://untappd.com/w/brooklyn-brewery/259
+        <div id="container259"></div>
+      </div>
+    </div>
+
+    <div id="374">
+      <div id="brewery-content">
+        <h1>Chelsea Craft Brewing Co.</h1>
+        https://untappd.com/w/chelsea-craft-brewing-company/374
+        <div id="container374"></div>
+      </div>
+    </div>
+
+    <div id="3735">
+      <div id="brewery-content">
+        <h1>Evil Twin Brewing</h1>
+        https://untappd.com/w/evil-twin-brewing/3735
+        https://api.untappd.com/v4/brewery/info/3735
+        <div id="container3735"></div>
+      </div>
+    </div>
+
+    <div id="52099">
+      <div id="brewery-content">
+        <h1>Finback Brewery</h1>
+        https://untappd.com/w/finback-brewery/52099
+        <div id="container52099"></div>
+      </div>
+    </div>
+
+    <div id="115902">
+      <div id="brewery-content">
+        <h1>Flagship Brewing Company</h1>
+        https://untappd.com/w/flagship-brewing-company/115902
+        <div id="container115902"></div>
+      </div>
+    </div>
+
+    <div id="2142">
+      <div id="brewery-content">
+        <h1>Great South Bay Brewery</h1>
+        https://untappd.com/w/great-south-bay-brewery/2142
+        <div id="container2142"></div>
+      </div>
+    </div>
+
+    <div id="115381">
+      <div id="brewery-content">
+        <h1>Greenpoint Beer & Ale Company</h1>
+        https://untappd.com/w/greenpoint-beer-ale-co/115381
+        <div id="container115381"></div>
+      </div>
+    </div>
+
+    <div id="73610">
+      <div id="brewery-content">
+        <h1>Kelso</h1>
+        https://untappd.com/w/greenpoint-beerworks/73610
+        <div id="container73610"></div>
+      </div>
+    </div> 
+
+    <div id="72844">
+      <div id="brewery-content">
+        <h1>Grimm Artisanal Ales</h1>
+        https://untappd.com/w/grimm-artisanal-ales/72844
+        <div id="container72844"></div>
+      </div>
+    </div>
+
+    <div id="106148">
+      <div id="brewery-content">
+        <h1>Gun Hill Brewing Company</h1>
+        https://untappd.com/w/gun-hill-brewing-company/106148
+        <div id="container106148"></div>
+      </div>
+    </div>
+
+    <div id="279573">
+      <div id="brewery-content">
+        <h1>Interboro Spirits and Ales</h1>
+        https://untappd.com/w/interboro-spirits-ales/279573
+        <div id="container279573"></div>
+      </div>
+    </div>
+
+    <div id="167520">
+      <div id="brewery-content">
+        <h1>Kings County Brewers Collective</h1>
+        https://untappd.com/w/kings-county-brewers-collective/167520
+        <div id="container167520"></div>
+      </div>
+    </div>
+
+    <div id="201804">
+      <div id="brewery-content">
+        <h1>LIC Beer Project</h1>
+        https://untappd.com/w/lic-beer-project/201804
+        <div id="container201804"></div>
+      </div>
+    </div>   
+
+    <div id="94785">
+      <div id="brewery-content">
+        <h1>Other Half Brewing Company</h1>
+        https://api.untappd.com/v4/brewery/info/94785
+        <div id="container94785"></div>
+      </div>
+    </div>
+
+    <div id="57402">
+      <div id="brewery-content">
+        <h1>Radiant Pig Craft Beers</h1>
+        https://untappd.com/w/radiant-pig-craft-beers/57402
+        <div id="container57402"></div>
+      </div>
+    </div>
+
+    <div id="47828">
+      <div id="brewery-content">
+        <h1>Rockaway Brewing Company</h1>
+        https://untappd.com/w/rockaway-brewing-company/47828
+        <div id="container47828"></div>
+      </div>
+    </div>
+
+    <div id="16555">
+      <div id="brewery-content">
+        <h1>SingleCut Beersmiths</h1>
+        https://untappd.com/w/singlecut-beersmiths/16555
+        <div id="container16555"></div>
+      </div>
+    </div>
+
+    <div id="1149">
+      <div id="brewery-content">
+        <h1>Sixpoint Craft Ales</h1>
+        https://untappd.com/w/sixpoint-brewery/1149
+        <div id="container1149"></div>
+      </div>
+    </div>
+
+    <div id="167557">
+      <div id="brewery-content">
+        <h1>Staten Island Beer Company</h1>
+        https://untappd.com/w/staten-island-beer-company/167557
+        <div id="container167557"></div>
+      </div>
+    </div>
+
+    <div id="99460">
+      <div id="brewery-content">
+        <h1>Third Rail Beer</h1>
+        https://untappd.com/w/third-rail-beer/99460
+        <div id="container99460"></div>
+      </div>
+    </div>
+
+    <div id="161808">
+      <div id="brewery-content">
+        <h1>Threes Brewing</h1>
+        https://untappd.com/w/threes-brewing/161808
+        <div id="container161808"></div>
+      </div>
+    </div>
+
+    <div id="95893">
+      <div id="brewery-content">
+        <h1>Transmitter Brewing</h1>
+        https://untappd.com/w/transmitter-brewing/95893
+        <div id="container95893"></div>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7XFwa9mAyB7x6NhxjbS311LCZ10a5SJY">
+  </script> 
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript">
+  </script> 
+  <script charset="utf-8" src="./slick/slick.js" type="text/javascript">
+  </script>   
+  <script src='script.js'>
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+Alphabet City Brewing Company
+https://untappd.com/w/alphabet-city-brewing-company/22243
+
+Big Alice Brewing
+https://untappd.com/w/big-alice-brewing-company/49805
+
+Braven Brewing Company
+https://untappd.com/w/braven-brewing-company/114457
+
+Bridge and Tunnel Brewery
+https://untappd.com/v/bridge-and-tunnel-brewery/3877986
+
+The Bronx Brewery
+https://untappd.com/w/the-bronx-brewery/15784
+
+Brooklyn Brewery
+https://untappd.com/w/brooklyn-brewery/259
+
+Chelsea Craft Brewing Co.
+https://untappd.com/w/chelsea-craft-brewing-company/374
+
+Evil Twin Brewing
+https://untappd.com/w/evil-twin-brewing/3735
+https://api.untappd.com/v4/brewery/info/3735
+
+Finback Brewery
+https://untappd.com/w/finback-brewery/52099
+
+508
+https://untappd.com/w/508-gastrobrewery/13876
+
+Flagship Brewing Company
+https://untappd.com/w/flagship-brewing-company/115902
+
+Great South Bay Brewery
+https://untappd.com/w/great-south-bay-brewery/2142
+
+Greenpoint Beer & Ale Company
+https://untappd.com/w/greenpoint-beer-ale-co/115381
+
+Greenpoint Beer Works / Kelso
+https://untappd.com/w/greenpoint-beerworks/73610
+
+Grimm Artisanal Ales
+https://untappd.com/w/grimm-artisanal-ales/72844
+
+Gun Hill Brewing Company
+https://untappd.com/w/gun-hill-brewing-company/106148
+
+Interboro Spirits and Ales
+https://untappd.com/w/interboro-spirits-ales/279573
+
+Kings County Brewers Collective
+https://untappd.com/w/kings-county-brewers-collective/167520
+
+LIC Beer Project
+https://untappd.com/w/lic-beer-project/201804
+
+Other Half Brewing Company
+https://api.untappd.com/v4/brewery/info/94785
+
+Radiant Pig Craft Beers
+https://untappd.com/w/radiant-pig-craft-beers/57402
+
+Rockaway Brewing Company (LIC)
+Rockaway Brewing Company (Rockaway)
+https://untappd.com/w/rockaway-brewing-company/47828
+
+SingleCut Beersmiths
+https://untappd.com/w/singlecut-beersmiths/16555
+
+Sixpoint Craft Ales
+https://untappd.com/w/sixpoint-brewery/1149
+
+Staten Island Beer Company
+https://untappd.com/w/staten-island-beer-company/167557
+
+Third Rail Beer
+https://untappd.com/w/third-rail-beer/99460
+
+Threes Brewing
+https://untappd.com/w/threes-brewing/161808
+
+Transmitter Brewing
+https://untappd.com/w/transmitter-brewing/95893
+
+
+    var point = new google.maps.LatLng(40, -20);
+    var data = "Hello World!";
+    var infowindow = new google.maps.InfoWindow({
+      content: data
+    });
+    var marker = new google.maps.Marker({
+        position: point,
+        title:"Hello World!"
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+
+-->
