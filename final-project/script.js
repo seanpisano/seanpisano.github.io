@@ -33,13 +33,14 @@ $(document).ready(function() {
 
 $(window).load(function(){
 
-$( "button" ).click(function() {
+$( "button, img" ).click(function() {
  console.log('arrow clicked');
 
 //Alphabet City Brewing Company
 $('#22243').each(function() {
         if ($(this).attr('aria-hidden') == 'false') {
             console.log('Alphabet City Brewing Company');
+
 //Brewery section
 $.ajax({
 	type: 'GET',
