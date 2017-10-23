@@ -1,87 +1,321 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>Sean's Class Page</title>
-</head>
-<body>
-<header>
-<nav>
-		<ul>
-			<li>Class Work
-				<ul>
-					<li><a href="class-work/cookie-recipe/index.html">Week One</a></li>
-					<li><a href="class-work/keanu/index.html">Week Two</a></li>
-				</ul>	
-			</li>
-			<li>Home Work
-				<ul>
-					<li><a href="homework/ga-press-release/index.html">Week One</a></li>
-					<li><a href="homework/travel-bucket-list/index.html">Week Two</a></li>
-				</ul>
-			</li>
-			<li>Class pages
-				<ul>
-					<li><a href="https://fewd-3-6.slack.com/messages/general/" rel="Class Slack Page">Class Slack Page</a></li>
-					<li><a href="http://gafewd.surge.sh/" rel="General Assembly's Frontend Web Development (FEWD) 3/6 Course." target="_blank">Class GA Page</li>
-					<li><a href="https://github.com/seanpisano/seanpisano.github.io" rel="Sean's GitHub">Sean's GitHub</a></li>
-					<li><a href="http://codepen.io/seanpisano/" rel="Sean's Code Pen" target="_blank">Sean's Code Pen</a></li>
-					<li><a href="https://dash.generalassemb.ly/" rel="Learn to code awesome websites in HTML, CSS, and JavaScript" target="_blank">GA Dash Learning Center</a></li>
-				</ul>
-			</li>
-		</ul>
-</nav>
-</header>
-	<h1>Why am I here?</h1>
-	<p>
-	I have been part of the web world for sometime now. I have a good grasp of this work. For the last 5 years I have been in a world that does not follow the rules. Inline styles and style sheets on the page is common place there. The world I work in is so absurd our main style sheet is 8000 plus lines of code. I need to reset my brain. 
-	</p>
-	<h3>Resource Notes</h3>
-	<ul>
-		<li>Sublime Text
-			<ul>
-				<li><a href="https://generalassemb.ly/blog/sublime-text-3-tips-tricks-shortcuts/" rel="GA Blog: Getting Started With Sublime Text 3: 25 Tips, Tricks, And Shortcuts" target="_blank">GA Blog: Getting Started With Sublime Text 3: 25 Tips, Tricks, And Shortcuts</li>
-				<li><a href="https://scotch.io/bar-talk/the-complete-visual-guide-to-sublime-text-3-getting-started-and-keyboard-shortcuts" rel="The Complete Visual Guide to Sublime Text 3: Getting Started and Keyboard Shortcuts | Scotch" target="_blank">The Complete Visual Guide to Sublime Text 3: Getting Started and Keyboard Shortcuts | Scotch</a></li>
-				<li><a href="https://emmet.io/" rel="Emmet — the essential toolkit for web-developers" target="_blank">Emmet — the essential toolkit for web-developers</a></li>
-			</ul>
-		</li>
-		<li>CSS / HTML
-			<ul>
-				<li><a href="http://www.htmldog.com/references/css/properties/" rel="HTML Dogs - CSS Properties Ref" target="_blank">HTML Dogs - CSS Properties Ref</a></li>
-				<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="A Complete Guide to Flexbox" target="_blank">CSS Tricks - A Complete Guide to Flexbox</a></li>
-				<li><a href="https://websitesetup.org/css3-cheat-sheet/" rel="Complete CSS Cheat Sheet" target="_blank">Complete CSS Cheat Sheet</a></li>
-				<li><a href="https://websitesetup.org/html5-cheat-sheet/" rel="HTML Cheat Sheet" target="_blank">HTML Cheat Sheet</a></li>
-				<li><a href="http://stackoverflow.com/questions/6887336/what-is-the-difference-between-normalize-css-and-reset-css" rel="What is the difference between Normalize.css and Reset CSS?" target="_blank">What is the difference between Normalize.css and Reset CSS?</a></li>
-				<li><a href="http://meyerweb.com/eric/tools/css/reset/" rel="CSS Tools: Reset CSS" target="_blank">CSS Tools: Reset CSS</a></li>
-				<li><a href="http://necolas.github.io/normalize.css/" rel="Normalize.css" target="_blank">Normalize.css</a></li>
-			</ul>
-		</li>
-		<li>Color
-			<ul> 
-				<li><a href="https://www.smashingmagazine.com/2012/10/the-code-side-of-color/" rel="Smashing Magazine Hex Colors: The Code Side Of Color" target="_blank">Hex Colors: The Code Side Of Color</a></li>
-				<li><a href="https://color.adobe.com/create/color-wheel/" rel="Adobe Color CC" target="_blank">Adobe Color CC (Formally Kuler) </a></li>
-			</ul>
-		</li>
-		<li>Box Model
-			<ul> 
-				<li><a href="http://guyroutledge.github.io/box-model" rel="Box Model Demo" target="_blank">Box Model Demo</a></li>
-			</ul>
-		</li>
-		<li>My Favorite Links
-			<ul>
-				<li><a href="https://convertcase.net/" rel="Convert Case<" target="_blank">Convert Case</a></li>
-			</ul>
-		</li>
+<!-- Start Meta ================================================== -->
+    <head>
+<!-- Start Meta ================================================== -->      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Sean Pisano Web Developer">
+        <meta name="author" content="Sean Pisano">
+        <link rel="shortcut icon" href="/imgs/favicon.ico">
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+        <title>Sean Pisano - Web Developer</title>
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+        <link rel="android-icon" sizes="36x36" href="/imgs/android-icon-36x36.png"/>
+        <link rel="android-icon" sizes="48x48" href="/imgs/android-icon-48x48.png"/>
+        <link rel="android-icon" sizes="72x73" href="/imgs/android-icon-72x72.png"/>
+        <link rel="android-icon" sizes="96x96" href="/imgs/android-icon-96x96.png"/>
+        <link rel="android-icon" sizes="144x144" href="/imgs/android-icon-144x144.png"/>
+        <link rel="android-icon" sizes="192x192" href="/imgs/android-icon-192x192.png"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="/imgs/apple-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="/imgs/apple-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/imgs/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="/imgs/apple-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/imgs/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="/imgs/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/imgs/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="/imgs/apple-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/imgs/apple-icon-180x180.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/imgs/apple-icon-precomposed.png"/>
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+        <link rel="stylesheet" href="/css/font-awesome.css">
+        <link rel="stylesheet" href="/css/fontpisano.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+    <body>
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->      
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+        <img src="/imgs/android-icon-48x48.png" width="30" height="30" alt="">
+        Sean Pisano</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <a class="btn btn btn-outline-success m-2" href="mailto:someone@example.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+          <a class="btn btn btn-outline-success m-2" href="#"><i class="fa fa-download" aria-hidden="true"></i> Download My Resume</a>
+        </div>
+      </nav>
+    </header>
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+    <div class="container-fluid">
+      <div class="row">
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->        
 
-		<!--orkish.github.io-->
-	</ul>
-<footer></footer>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>	
-</body>
+<!-- ========== Left Sidebar Start ========== -->
+<div id="mobile-master">
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <!--- Divider -->
+        <div id="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="#" class="waves-effect waves-primary"><i class="ti-home"></i><span> Mission </span></a>
+                </li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span>Logo</span>
+                      <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Alternatinative Logo</a></li>
+                        <li><a href="#">Favicon / Application Icons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-primary"><i class="ti-home"></i><span> Colour Palette</span></a>
+                </li>
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span>Coding Standards</span>
+                      <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Typography / Fonts</a></li>
+                        <li><a href="#">Buttons</a></li>
+                        <li><a href="#">Icons</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Tables </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+<!-- Left Sidebar End -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<nav class="collapse col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <ul class="social list-inline text-center m-2">
+              <li class="list-inline-item m-1"><a href="https://www.linkedin.com/in/seanpisano/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item m-1"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item m-1"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item m-1"><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item m-1"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analytics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Export</a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nav item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nav item again</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">One more nav</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Another nav item</a>
+            </li>
+          </ul>
+
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nav item again</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">One more nav</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Another nav item</a>
+            </li>
+          </ul>
+        </nav>-->
+<!-- Start Meta ================================================== -->
+<!-- Start Meta ================================================== -->
+        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          <h1>Dashboard</h1>
+
+          <section class="row text-center placeholders">
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <div class="text-muted">Something else</div>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </section>
+
+          <h2>Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/tether.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/detect.js"></script>
+        <script src="/js/fastclick.js"></script>
+        <script src="/js/jquery.slimscroll.js"></script>
+        <script src="/js/jquery.blockUI.js"></script>
+        <script src="/js/waves.js"></script>
+        <script src="/js/wow.min.js"></script>
+        <script src="/js/jquery.nicescroll.js"></script>
+        <script src="/js/jquery.scrollTo.min.js"></script>
+        <!-- Custom main Js -->
+        <script src="/js/jquery.core.js"></script>
+        <script src="/js/jquery.app.js"></script>
+
+
+
+
+
+
+    </body>
 </html>
-
-
-
