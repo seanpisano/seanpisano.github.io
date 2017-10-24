@@ -12709,8 +12709,16 @@
 .wi-owm-night-957:before {
   content: ""; }
 
+/*
+#c7b0c3 - Maverick (Violet) - light purple
+#c8ac6f - Putty (Yellow) - dark gold
+#d4c39c - Double Spanish White (Grey) - light gold
+#7d5a76 - Trendy Pink (Violet) - Dark Purple
+#763d6c - Eminence (Violet) - Darkest Purple
+#471e3e - Main - Deep Purple
+*/
 body {
-  background: #fff;
+  background: #471e3e;
   font-family: 'pisano';
   padding-top: 5rem; }
 
@@ -12726,7 +12734,7 @@ body {
   Menu
   ===================================*/
 .navbar-custom {
-  background-color: #7266ba;
+  background-color: #471e3e;
   border-radius: 0;
   margin-bottom: 0;
   padding: 0 10px 0 0;
@@ -12856,7 +12864,7 @@ body.fixed-left .side-menu.left {
   display: inline-block;
   height: 70px;
   width: 60px;
-  background-color: #7266ba;
+  background-color: #471e3e;
   font-size: 24px; }
 
 .sidebar-inner {
@@ -12887,14 +12895,14 @@ body.fixed-left .side-menu.left {
     #sidebar-menu ul ul li {
       border-top: 0; }
     #sidebar-menu ul ul li.active a {
-      color: #7266ba; }
+      color: #471e3e; }
     #sidebar-menu ul ul a {
       color: #75798B;
       display: block;
       padding: 10px 20px 10px 65px;
       font-size: 0.95rem; }
       #sidebar-menu ul ul a:hover {
-        color: #7266ba; }
+        color: #471e3e; }
       #sidebar-menu ul ul a i {
         margin-right: 5px; }
     #sidebar-menu ul ul ul a {
@@ -12903,7 +12911,7 @@ body.fixed-left .side-menu.left {
     margin-top: 2px; }
   #sidebar-menu .subdrop {
     background: #f5f5f5 !important;
-    border-left: 3px solid #7266ba; }
+    border-left: 3px solid #471e3e; }
 
 #sidebar-menu > ul > li > a {
   color: #2a3142;
@@ -12912,7 +12920,7 @@ body.fixed-left .side-menu.left {
   margin: 4px 0;
   border-left: 3px solid #ffffff; }
   #sidebar-menu > ul > li > a:hover {
-    color: #7266ba;
+    color: #471e3e;
     text-decoration: none; }
 
 #sidebar-menu > ul > li > a > span {
@@ -12964,7 +12972,7 @@ body.fixed-left .side-menu.left {
 
 #sidebar-menu > ul > li > a.active {
   background: #f5f5f5 !important;
-  border-left: 3px solid #7266ba; }
+  border-left: 3px solid #471e3e; }
 
 .menu-title {
   padding: 12px 20px !important;
@@ -13064,8 +13072,8 @@ body.fixed-left .side-menu.left {
         position: relative;
         width: 260px;
         background: #eeeeee;
-        color: #7266ba;
-        border-color: #7266ba; }
+        color: #471e3e;
+        border-color: #471e3e; }
       #mobile-master .left.side-menu #sidebar-menu ul > li:hover > ul {
         display: block;
         left: 70px;
@@ -13079,7 +13087,7 @@ body.fixed-left .side-menu.left {
           width: 186px;
           z-index: 6; }
           #mobile-master .left.side-menu #sidebar-menu ul > li:hover > ul a:hover {
-            color: #7266ba; }
+            color: #471e3e; }
       #mobile-master .left.side-menu #sidebar-menu ul > li:hover a span {
         display: inline; }
     #mobile-master .left.side-menu #sidebar-menu li .show-menu + ul {
@@ -13095,9 +13103,9 @@ body.fixed-left .side-menu.left {
         width: 186px;
         z-index: 6; }
         #mobile-master .left.side-menu #sidebar-menu li .show-menu + ul a:hover {
-          color: #7266ba; }
+          color: #471e3e; }
     #mobile-master .left.side-menu #sidebar-menu a.subdrop {
-      color: #7266ba !important; }
+      color: #471e3e !important; }
     #mobile-master .left.side-menu #sidebar-menu ul > li > ul {
       display: none; }
     #mobile-master .left.side-menu #sidebar-menu ul ul li:hover > ul {
@@ -13114,7 +13122,7 @@ body.fixed-left .side-menu.left {
       top: 12px;
       transform: rotate(270deg); }
     #mobile-master .left.side-menu #sidebar-menu ul ul li.active a {
-      color: #7266ba; }
+      color: #471e3e; }
     #mobile-master .left.side-menu #sidebar-menu ul > li > a span {
       display: none;
       padding-left: 10px; }
@@ -13369,7 +13377,7 @@ body.fixed-left .side-menu.left {
   background-color: rgba(0, 150, 136, 0.7); }
 
 .waves-effect.waves-primary .waves-ripple {
-  background-color: fade(#7266ba, 40%); }
+  background-color: fade(#471e3e, 40%); }
 
 .waves-notransition {
   -webkit-transition: none !important;
