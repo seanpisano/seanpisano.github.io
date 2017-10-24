@@ -1,4 +1,5 @@
 $bg-color: #fff;
+$green:  #ffaa00;
 
 // Color variables
 $white: #ffffff;
@@ -42,12 +43,6 @@ $height: 100%;
 @import "icons/themify-icons/themify-icons";
 @import "icons/weather-icons/sass/weather-icons.min";
 
-
-
-
-
-
-
 body {
     background: $bg-color;
     font-family:'pisano';
@@ -63,9 +58,6 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-
-
-
 
 /*===================================
   Menu
