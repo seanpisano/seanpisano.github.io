@@ -12709,16 +12709,8 @@
 .wi-owm-night-957:before {
   content: ""; }
 
-/*
-#c7b0c3 - Maverick (Violet) - light purple
-#c8ac6f - Putty (Yellow) - dark gold
-#d4c39c - Double Spanish White (Grey) - light gold
-#7d5a76 - Trendy Pink (Violet) - Dark Purple
-#763d6c - Eminence (Violet) - Darkest Purple
-#471e3e - Main - Deep Purple
-*/
 body {
-  background: #471e3e;
+  background: #ffffff;
   font-family: 'pisano';
   padding-top: 5rem; }
 
