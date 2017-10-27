@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "icons/font-awesome/scss/font-awesome";
 @import "icons/material-design/materialdesignicons";
 @import "icons/ionicons/scss/ionicons";
@@ -6,58 +7,22 @@
 
 
 
-//
-// Color system
-//
+// Color variables
+$white: #ffffff;
 
-// stylelint-disable
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-
-$grays: () !default;
-$grays: map-merge((
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-), $grays);
-
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
-
-//Brand Colors
-$maverick: #c7b0c3;          //- Maverick (Violet) - light purple
-$putty: #c8ac6f;             //- Putty (Yellow) - dark gold
-$dspanish: #d4c39c;     //- Double Spanish White (Grey) - light gold
-$trenpink: #7d5a76;       //- Trendy Pink (Violet) - Dark Purple
-$eminence: #763d6c;          //- Eminence (Violet) - Darkest Purple
-$deeppurple: #471e3e;     //- Main - Deep Purple
+$primary: #7266ba;
+$success: #00b19d;
+$info: #3ddcf7;
+$warning: #ffaa00;
+$danger: #ef5350;
+$dark: #2a3142;
+$inverse: #4c5667;
+$pink: #f76397;
+$purple: #3bafda;
+$muted: #98a6ad;
 
 
 
-//Grays
 $lightgray: #dddddd;
 $light: #eeeeee;
 $lightdark3: #333333;
@@ -70,68 +35,6 @@ $light-alt: #fafafa;
 $lightdark7: #797979;
 $lightdark-alt: #cccccc;
 
-$colors: () !default;
-$colors: map-merge((
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800,
-  "maverick":   $maverick,
-  "putty":      $putty,
-  "dspanish":   $dspanish,
-  "trenpink":   $trenpink,
-  "eminence":   $eminence,
-  "deeppurple": $deeppurple
-), $colors);
-
-// Color variables
-$primary:       $deeppurple;
-$secondary:     $gray-600;
-$success:       $deeppurple;
-$info:          #3ddcf7;
-$warning:       #ffaa00;
-$danger:        #ef5350;
-$dark:          #2a3142;
-$inverse:       #4c5667;
-$pink:          #f76397;
-$purple:        #3bafda;
-$muted:         #98a6ad;
-$white:         #ffffff;
-$green:         #0b6623;
-
-$theme-colors: () !default;
-$theme-colors: map-merge((
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-), $theme-colors);
-// stylelint-enable
-
-// Set a specific jump point for requesting color jumps
-$theme-color-interval:      8% !default;
-
-
-
-$navbar-dark-color:                 $deeppurple !default;
-$navbar-dark-hover-color:           rgba($white,.75) !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-disabled-color:        rgba($white,.25) !default;
-$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-dark-toggler-border-color:  rgba($white,.1) !default;
 
 
 // Width variables
@@ -140,8 +43,7 @@ $width: 100%;
 // Height variables
 $height: 100%;
 
-$bg-color: #fff;
-$bg-maverick: #c7b0c3;
+$bg-color: $white;
 
 body {
     background: $bg-color;
