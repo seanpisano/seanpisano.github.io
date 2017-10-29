@@ -5,9 +5,9 @@
 @import "icons/themify-icons/themify-icons";
 @import "icons/weather-icons/sass/weather-icons.min";
 
-
-
-// Color variables
+/*===================================
+Colors
+  ===================================*/
 $white: #ffffff;
 
 $primary: #7266ba;
@@ -21,8 +21,6 @@ $pink: #f76397;
 $purple: #3bafda;
 $muted: #98a6ad;
 
-
-
 $lightgray: #dddddd;
 $light: #eeeeee;
 $lightdark3: #333333;
@@ -34,8 +32,6 @@ $light9: #f9f9f9;
 $light-alt: #fafafa;
 $lightdark7: #797979;
 $lightdark-alt: #cccccc;
-
-
 
 // Width variables
 $width: 100%;
@@ -51,21 +47,289 @@ body {
     padding-top: 5rem;
 }
 
-/* Placeholders */
-.placeholders {
-  padding-bottom: 3rem;
-}
-
-.placeholder img {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.card-box {
+  padding: 20px;
+  border: 1px solid rgba(54, 64, 74, .08);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  margin-bottom: 20px;
+  background-color: $white;
 }
 
 /*===================================
-  Menu
-  ===================================*/
+Mission
+===================================*/
 
-.navbar-custom {
+/*===================================
+Logo
+===================================*/
+
+/*===================================
+Colour Palette
+===================================*/
+
+/*===================================
+Typography / Fonts
+===================================*/
+.letters {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.s10:before {
+  content: '10px';
+}
+.s11:before {
+  content: '11px';
+}
+.s12:before {
+  content: '12px';
+}
+.s14:before {
+  content: '14px';
+}
+.s18:before {
+  content: '18px';
+}
+.s24:before {
+  content: '24px';
+}
+.s30:before {
+  content: '30px';
+}
+.s36:before {
+  content: '36px';
+}
+.s48:before {
+  content: '48px';
+}
+.s60:before {
+  content: '60px';
+}
+.s72:before {
+  content: '72px';
+}
+.s10:before, .s11:before, .s12:before, .s14:before,
+.s18:before, .s24:before, .s30:before, .s36:before,
+.s48:before, .s60:before, .s72:before {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  color: #999;
+  padding-right: 6px;
+}
+/*===================================
+   Buttons
+===================================*/
+.btn-primary, .btn-success, .btn-info, .btn-warning,
+.btn-danger, .btn-dark {
+  color: $white;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
+.open > .dropdown-toggle.btn-primary, .btn-outline-primary.active, .btn-outline-primary:active,
+.show > .btn-outline-primary.dropdown-toggle, .btn-outline-primary:hover, .btn-primary.active,
+.btn-primary:active, .show > .btn-primary.dropdown-toggle {
+  background-color: darken($primary, 5%);
+  border: 1px solid darken($primary, 5%);
+}
+
+.btn-success {
+  background-color: $success;
+  border: 1px solid $success;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active,
+.btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover,
+.open > .dropdown-toggle.btn-success, .btn-outline-success.active, .btn-outline-success:active,
+.show > .btn-outline-success.dropdown-toggle, .btn-outline-success:hover, .btn-success.active,
+.btn-success:active, .show > .btn-success.dropdown-toggle {
+  background-color: darken($success, 5%);
+  border: 1px solid darken($success, 5%);
+}
+
+.btn-info {
+  background-color: $info;
+  border: 1px solid $info;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.focus,
+.btn-info:active, .btn-info:focus, .btn-info:hover, .open > .dropdown-toggle.btn-info,
+.btn-outline-info.active, .btn-outline-info:active,
+.show > .btn-outline-info.dropdown-toggle, .btn-outline-info:hover, .btn-info.active, .btn-info:active,
+.show > .btn-info.dropdown-toggle {
+  background-color: darken($info, 5%);
+  border: 1px solid darken($info, 5%);
+}
+
+.btn-warning {
+  background-color: $warning;
+  border: 1px solid $warning;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active,
+.btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover,
+.open > .dropdown-toggle.btn-warning, .btn-outline-warning.active, .btn-outline-warning:active,
+.show > .btn-outline-warning.dropdown-toggle, .btn-outline-warning:hover, .btn-warning.active,
+.btn-warning:active, .show > .btn-warning.dropdown-toggle {
+  background-color: darken($warning, 5%);
+  border: 1px solid darken($warning, 5%);
+  color: $white;
+}
+
+.btn-danger {
+  background-color: $danger;
+  border: 1px solid $danger;
+}
+
+.btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger.active,
+.btn-danger.focus, .btn-danger:active, .btn-danger:focus, .btn-danger:hover,
+.open > .dropdown-toggle.btn-danger, .btn-outline-danger.active, .btn-outline-danger:active,
+.show > .btn-outline-danger.dropdown-toggle, .btn-outline-danger:hover, .btn-danger.active,
+.btn-danger:active, .show > .btn-danger.dropdown-toggle {
+  background-color: darken($danger, 5%);
+  border: 1px solid darken($danger, 5%);
+}
+
+.btn-dark {
+  background-color: $dark;
+  border: 1px solid $dark;
+  color: $white;
+}
+
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .btn-dark.focus,
+.btn-dark:active, .btn-dark:focus, .btn-dark:hover, .open > .dropdown-toggle.btn-dark,
+.btn-outline-dark.active, .btn-outline-dark:active,
+.show > .btn-outline-dark.dropdown-toggle, .btn-outline-dark:hover {
+  background-color: darken($dark, 5%);
+  border: 1px solid darken($dark, 5%);
+  color: $white;
+}
+
+.btn-dark.focus, .btn-dark:focus, .btn-outline-dark.focus, .btn-outline-dark:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba($dark, .3);
+  box-shadow: 0 0 0 2px rgba($dark, .3);
+}
+
+.btn-link {
+  color: $dark;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+/* button Outline */
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+}
+
+.btn-outline-success {
+  color: $success;
+  border-color: $success;
+}
+
+.btn-outline-info {
+  color: $info;
+  border-color: $info;
+}
+
+.btn-outline-warning {
+  color: $warning;
+  border-color: $warning;
+}
+
+.btn-outline-danger {
+  color: $danger;
+  border-color: $danger;
+}
+
+.btn-outline-dark {
+  color: $dark;
+  background-image: none;
+  background-color: transparent;
+  border-color: $dark;
+}
+
+.btn-custom {
+  border-bottom: 3px solid transparent;
+}
+
+.btn-custom.btn-default {
+  background-color: $light3;
+  border-bottom: 2px solid $lightdark-alt !important;
+}
+
+.btn-custom.btn-primary {
+  border-bottom: 2px solid darken($primary, 10%) !important;
+}
+
+.btn-custom.btn-success {
+  border-bottom: 2px solid darken($success, 10%) !important;
+}
+
+.btn-custom.btn-info {
+  border-bottom: 2px solid darken($info, 20%) !important;
+}
+
+.btn-custom.btn-warning {
+  border-bottom: 2px solid darken($warning, 10%) !important;
+}
+
+.btn-custom.btn-danger {
+  border-bottom: 2px solid darken($danger, 20%) !important;
+}
+
+.btn-custom.btn-dark {
+  border-bottom: 2px solid darken($inverse, 30%) !important;
+}
+
+.btn-rounded {
+  border-radius: 2em;
+  padding: 6px 18px;
+}
+
+.fileupload {
+  overflow: hidden;
+  position: relative;
+  input.upload {
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+/*===================================
+  Icons
+===================================*/
+
+/*===================================
+  Forms
+===================================*/
+
+/*===================================
+  Tables
+===================================*/
+
+/*===================================
+  Menu
+===================================*/
+
+/*.navbar-custom {
   background-color: $primary;
   border-radius: 0;
   margin-bottom: 0;
@@ -99,7 +363,7 @@ body {
 }
 
 /* Notification */
-.notification-list {
+/*.notification-list {
   margin-left: 0 !important;
 
   .noti-title {
@@ -189,7 +453,7 @@ body {
     vertical-align: middle;
   }
 }
-
+*/
 .nav-user {
   padding: 0 12px !important;
 
@@ -213,7 +477,7 @@ body {
 .side-menu.left {
   background: $white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  position: absolute;
+  position: fixed;
   top: 70px;
 }
 
@@ -447,13 +711,6 @@ body.fixed-left {
     left: 180px;
   }
 }
-
-
-
-
-
-
-
  .side-menu-sm {
   text-align: left;
 }
@@ -481,14 +738,7 @@ body.fixed-left {
   padding: 10px 20px 0 20px;
 }
 
-
-
-
-
-
 @media (max-width:768px) {
-
-
 
 #mobile-master {
 
@@ -506,8 +756,6 @@ body.fixed-left {
       }
     }
   }
-
-
 
   .left.side-menu {
     width: 70px;
@@ -643,8 +891,6 @@ body.fixed-left {
       display: none;
     }
   }
-
-
   .content-page {
     margin-left: 70px;
   }
