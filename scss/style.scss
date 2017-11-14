@@ -48,6 +48,7 @@ $height: 100%;
 
 $bg-color: #f5f5f5;
 $bg-master:#555555;
+$bg-primary: $primary;
 
 $card-border-color-maverick: $maverick;
 $card-border-color-putty: $putty;
@@ -72,10 +73,6 @@ body {
   margin-bottom: 20px;
   background-color: $white;
 }
-
-
-
-
 
 /*===================================
    Helper classes
@@ -287,13 +284,41 @@ body {
 Mission
 ===================================*/
 
+.mission {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;
+}
+
 /*===================================
 Logo
 ===================================*/
 
+.logo {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
+
+.altlogo {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
+.fav {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
+
 /*===================================
 Colour Palette
 ===================================*/
+.colour {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 .card-header-maverick {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -404,6 +429,11 @@ Colour Palette
 /*===================================
 Typography / Fonts
 ===================================*/
+.typography {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 .letters {
   font-size: 18px;
   margin-bottom: 20px;
@@ -454,6 +484,11 @@ Typography / Fonts
 /*===================================
    Buttons
 ===================================*/
+.buttons {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 .btn-primary, .btn-success, .btn-info, .btn-warning,
 .btn-danger, .btn-dark {
   color: $white;
@@ -683,7 +718,11 @@ Typography / Fonts
 /*===================================
   Icons
 ===================================*/
-
+.icons {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -868,14 +907,25 @@ Typography / Fonts
 /*===================================
   Forms
 ===================================*/
+.forms {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 
 /*===================================
   Tables
 ===================================*/
+.tables {
+  display:block;
+  padding-top:100px;
+  margin-top:-100px;  
+}
 
 /*===================================
   Menu
 ===================================*/
+
 .social-links {
   li {
     a {
@@ -886,6 +936,51 @@ Typography / Fonts
     }
   }
 }
+
+.navbar {
+  background-color: $primary;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0 10px 0 0;
+  min-height: 70px;
+
+  .nav-link {
+    padding: 0;
+    line-height: 70px;
+   }
+
+  .nav-item {
+    a {
+      color: $white !important;
+    }
+    a:hover {
+      color: $trenpink !important;
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      content: initial;
+    }
+  }
+
+  .menu-left {
+    overflow: hidden;
+  }
+}
+
+.navbar-collapse {
+  padding-left: 10px;
+    .social-links {
+      flex-direction: row;
+    }
+    .nav-link {
+      padding: 0;
+      line-height: 35px;
+      }         
+  }
+
+/*
 
 .navbar-custom {
   background-color: $primary;
@@ -932,6 +1027,11 @@ Typography / Fonts
     color: $trenpink;
   }
 }
+
+
+*/
+
+
 
 /*.profile {
   img {

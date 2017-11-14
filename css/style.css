@@ -18755,12 +18755,37 @@ body {
 /*===================================
 Mission
 ===================================*/
+.mission {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 /*===================================
 Logo
 ===================================*/
+.logo {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
+.altlogo {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
+.fav {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 /*===================================
 Colour Palette
 ===================================*/
+.colour {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 .card-header-maverick {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
@@ -18830,6 +18855,11 @@ Colour Palette
 /*===================================
 Typography / Fonts
 ===================================*/
+.typography {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 .letters {
   font-size: 18px;
   margin-bottom: 20px; }
@@ -18880,6 +18910,11 @@ Typography / Fonts
 /*===================================
    Buttons
 ===================================*/
+.buttons {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 .btn-primary, .btn-success, .btn-info, .btn-warning,
 .btn-danger, .btn-dark {
   color: #ffffff; }
@@ -19070,6 +19105,11 @@ Typography / Fonts
 /*===================================
   Icons
 ===================================*/
+.icons {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -19240,9 +19280,19 @@ Typography / Fonts
 /*===================================
   Forms
 ===================================*/
+.forms {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 /*===================================
   Tables
 ===================================*/
+.tables {
+  display: block;
+  padding-top: 100px;
+  margin-top: -100px; }
+
 /*===================================
   Menu
 ===================================*/
@@ -19252,37 +19302,82 @@ Typography / Fonts
 .social-links li a:hover {
   color: #7d5a76; }
 
-.navbar-custom {
+.navbar {
   background-color: #471e3e;
   border-radius: 0;
   margin-bottom: 0;
   padding: 0 10px 0 0;
   min-height: 70px; }
-  .navbar-custom .nav-link {
+  .navbar .nav-link {
+    padding: 0;
+    line-height: 70px; }
+  .navbar .nav-item a {
+    color: #ffffff !important; }
+  .navbar .nav-item a:hover {
+    color: #7d5a76 !important; }
+  .navbar .dropdown-toggle:after {
+    content: initial; }
+  .navbar .menu-left {
+    overflow: hidden; }
+
+.navbar-collapse {
+  padding-left: 10px; }
+  .navbar-collapse .social-links {
+    flex-direction: row; }
+  .navbar-collapse .nav-link {
+    padding: 0;
+    line-height: 35px; }
+
+/*
+
+.navbar-custom {
+  background-color: $primary;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0 10px 0 0;
+  min-height: 70px;
+
+  .nav-link {
     padding: 0;
     line-height: 70px;
-    color: #ffffff; }
-  .navbar-custom a:hover {
-    color: #7d5a76; }
-  .navbar-custom .dropdown-toggle:after {
-    content: initial; }
-  .navbar-custom .menu-left {
-    overflow: hidden; }
+    color: $white;
+   }
+
+   a:hover {
+    color: $trenpink;
+  }
+
+  .dropdown-toggle {
+    &:after {
+      content: initial;
+    }
+  }
+
+  .menu-left {
+    overflow: hidden;
+  }
+}
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  margin-right: $navbar-padding-x;
+  font-size: $navbar-brand-font-size;
   line-height: inherit;
   white-space: nowrap;
-  float: left; }
-  .navbar-brand:focus, .navbar-brand:hover {
-    text-decoration: none; }
-  .navbar-brand a:hover {
-    color: #7d5a76; }
+  float: left;
 
+  @include hover-focus {
+    text-decoration: none;
+  }
+  a:hover {
+    color: $trenpink;
+  }
+}
+
+
+*/
 /*.profile {
   img {
     border: 2px solid #edf0f0;
