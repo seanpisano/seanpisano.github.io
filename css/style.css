@@ -18578,7 +18578,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 /*===================================
 Colors
-  ===================================*/
+===================================*/
 body {
   background: #f5f5f5;
   font-family: 'pisano';
@@ -18668,6 +18668,25 @@ body {
 
 .m-b-30 {
   margin-bottom: 30px !important; }
+
+.ml-md-8, .mx-md-8 {
+  margin-left: 4.5rem !important; }
+
+@media (min-width: 576px) {
+  .ml-md-8, .mx-md-8 {
+    margin-left: 4.5rem !important; } }
+
+@media (min-width: 768px) {
+  .ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important; } }
+
+@media (min-width: 992px) {
+  .ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important; } }
+
+@media (min-width: 1200px) {
+  .ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important; } }
 
 .w-xs {
   min-width: 80px; }
@@ -18777,6 +18796,36 @@ Logo
   display: block;
   padding-top: 100px;
   margin-top: -100px; }
+
+.logoOne {
+  width: 230px; }
+
+.logoAlt {
+  width: 100%; }
+
+@media (min-width: 576px) {
+  .logoOne {
+    width: 210px; }
+  .logoAlt {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .logoOne {
+    width: 185px; }
+  .logoAlt {
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  .logoOne {
+    width: 350px; }
+  .logoAlt {
+    width: 100%; } }
+
+@media (min-width: 1200px) {
+  .logoOne {
+    width: 400px; }
+  .logoAlt {
+    width: 100%; } }
 
 /*===================================
 Colour Palette
@@ -19328,156 +19377,44 @@ Typography / Fonts
     padding: 0;
     line-height: 35px; }
 
-/*
+/*===================================
+  Top Menu Responsive Code Start
+===================================*/
+@media (min-width: 962px) and (max-width: 1242px) {
+  .btn {
+    font-size: 10px; }
+  .fa-lg {
+    font-size: 15px; }
+  .navbar-nav {
+    font-size: 12px; }
+  .navbar-brand {
+    font-size: 15px; } }
 
-.navbar-custom {
-  background-color: $primary;
-  border-radius: 0;
-  margin-bottom: 0;
-  padding: 0 10px 0 0;
-  min-height: 70px;
+@media (min-width: 795px) and (max-width: 961px) {
+  .btn {
+    font-size: 10px; }
+  .fa-lg {
+    font-size: 15px; }
+  .navbar-nav {
+    font-size: 12px; }
+  .navbar-brand {
+    font-size: 15px;
+    display: none; } }
 
-  .nav-link {
-    padding: 0;
-    line-height: 70px;
-    color: $white;
-   }
+@media (min-width: 768px) and (max-width: 794px) {
+  .btn {
+    font-size: 10px; }
+  .fa-lg {
+    font-size: 13px; }
+  .navbar-nav {
+    font-size: 12px; }
+  .navbar-brand {
+    font-size: 15px;
+    display: none; } }
 
-   a:hover {
-    color: $trenpink;
-  }
-
-  .dropdown-toggle {
-    &:after {
-      content: initial;
-    }
-  }
-
-  .menu-left {
-    overflow: hidden;
-  }
-}
-
-.navbar-brand {
-  display: inline-block;
-  padding-top: $navbar-brand-padding-y;
-  padding-bottom: $navbar-brand-padding-y;
-  margin-right: $navbar-padding-x;
-  font-size: $navbar-brand-font-size;
-  line-height: inherit;
-  white-space: nowrap;
-  float: left;
-
-  @include hover-focus {
-    text-decoration: none;
-  }
-  a:hover {
-    color: $trenpink;
-  }
-}
-
-
-*/
-/*.profile {
-  img {
-    border: 2px solid #edf0f0;
-    height: 36px;
-    width: 36px;
-  }
-}
-
-/* Notification */
-/*.notification-list {
-  margin-left: 0 !important;
-
-  .noti-title {
-    margin-bottom: 0;
-    width: auto;
-    padding: 12px 20px;
-
-    h5 {
-      margin: 0;
-    }
-
-    .label {
-      float: right;
-    }
-  }
-
-  .noti-icon {
-    font-size: 18px;
-    padding: 0 12px;
-    vertical-align: middle;
-    color: rgba($white, 0.8);
-  }
-  .noti-icon-badge {
-    display: inline-block;
-    position: absolute;
-    top: 14px;
-    right: 8px;
-  }
-  .notify-item {
-    padding: 10px 20px;
-
-    .notify-icon {
-      float: left;
-      height: 36px;
-      width: 36px;
-      line-height: 36px;
-      text-align: center;
-      margin-right: 10px;
-      border-radius: 50%;
-      color: $white;
-
-      img {
-        margin-top: 4px;
-      }
-    }
-    .notify-details {
-      margin-bottom: 0;
-      overflow: hidden;
-      margin-left: 45px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      b {
-        font-weight: 500;
-      }
-      small {
-        display: block;
-      }
-      span {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-size: 13px;
-      }
-    }
-  }
-  .notify-all {
-    border-radius: 0 0 0.25rem 0.25rem;
-    margin: 0 0 -5px 0;
-    background-color: $light;
-  }
-  .profile-dropdown {
-    .notify-item {
-      padding: 4px 20px;
-    }
-  }
-}
-
-.profile-dropdown {
-  width: 170px;
-  i {
-    font-size: 17px;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-  span {
-    vertical-align: middle;
-  }
-}
-*/
+/*===================================
+  Top Menu Responsive Code End
+===================================*/
 .nav-user {
   padding: 0 12px !important; }
   .nav-user img {

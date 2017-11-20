@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "icons/font-awesome/scss/font-awesome";
 @import "icons/material-design/materialdesignicons";
@@ -7,8 +15,7 @@
 
 /*===================================
 Colors
-  ===================================*/
-$white: #ffffff;
+===================================*/
 
 $primary: #471e3e;
 $secondary:#763d6c;
@@ -27,6 +34,7 @@ $dspanish: #d4c39c;
 $trenpink: #7d5a76;
 $eminence: #763d6c;
 $deeppurple: #471e3e;
+$white: #ffffff;
 
 $lightgray: #dddddd;
 $light: #eeeeee;
@@ -172,6 +180,36 @@ body {
   margin-bottom: 30px !important;
 }
 
+@include media-breakpoint-up(xs) {   
+.ml-md-8, .mx-md-8 {
+    margin-left: 4.5rem !important;
+ }  
+}
+
+@include media-breakpoint-up(sm) {   
+.ml-md-8, .mx-md-8 {
+    margin-left: 4.5rem !important;
+ }  
+}
+
+@include media-breakpoint-up(md) {   
+.ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important;
+ }  
+}
+
+@include media-breakpoint-up(lg) {   
+.ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important;
+ }  
+}
+
+@include media-breakpoint-up(xl) {   
+.ml-md-8, .mx-md-8 {
+    margin-left: 15rem !important;
+ }  
+}
+
 .w-xs {
   min-width: 80px;
 }
@@ -311,6 +349,52 @@ Logo
   margin-top:-100px;  
 }
 
+
+@include media-breakpoint-up(xs) {   
+  .logoOne {
+    width: 230px;
+  }
+  .logoAlt {
+    width: 100%;
+  } 
+}
+
+@include media-breakpoint-up(sm) {   
+  .logoOne {
+    width: 210px; 
+  }
+  .logoAlt {
+    width: 100%;
+  }    
+}
+
+@include media-breakpoint-up(md) {   
+  .logoOne {
+    width: 185px;
+  } 
+  .logoAlt {
+    width: 100%;
+  } 
+}
+
+@include media-breakpoint-up(lg) {   
+  .logoOne {
+    width: 350px;
+  }
+  .logoAlt {
+    width: 100%;
+  } 
+}
+
+@include media-breakpoint-up(xl) {   
+  .logoOne {
+    width: 400px;
+  }
+  .logoAlt {
+    width: 100%;
+  } 
+}
+
 /*===================================
 Colour Palette
 ===================================*/
@@ -319,6 +403,7 @@ Colour Palette
   padding-top:100px;
   margin-top:-100px;  
 }
+
 .card-header-maverick {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -390,6 +475,7 @@ Colour Palette
     }
   }
 }
+
 .card-header-eminence {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -434,43 +520,56 @@ Typography / Fonts
   padding-top:100px;
   margin-top:-100px;  
 }
+
 .letters {
   font-size: 18px;
   margin-bottom: 20px;
 }
+
 .s10:before {
   content: '10px';
 }
+
 .s11:before {
   content: '11px';
 }
+
 .s12:before {
   content: '12px';
 }
+
 .s14:before {
   content: '14px';
 }
+
 .s18:before {
   content: '18px';
 }
+
 .s24:before {
   content: '24px';
 }
+
 .s30:before {
   content: '30px';
 }
+
 .s36:before {
   content: '36px';
 }
+
 .s48:before {
   content: '48px';
 }
+
 .s60:before {
   content: '60px';
 }
+
 .s72:before {
   content: '72px';
 }
+
 .s10:before, .s11:before, .s12:before, .s14:before,
 .s18:before, .s24:before, .s30:before, .s36:before,
 .s48:before, .s60:before, .s72:before {
@@ -481,6 +580,7 @@ Typography / Fonts
   color: #999;
   padding-right: 6px;
 }
+
 /*===================================
    Buttons
 ===================================*/
@@ -489,6 +589,7 @@ Typography / Fonts
   padding-top:100px;
   margin-top:-100px;  
 }
+
 .btn-primary, .btn-success, .btn-info, .btn-warning,
 .btn-danger, .btn-dark {
   color: $white;
@@ -601,7 +702,6 @@ Typography / Fonts
 
 .btn-link {
   color: $dark;
-
   &:hover {
     color: $primary;
   }
@@ -715,6 +815,7 @@ Typography / Fonts
     top: 0;
   }
 }
+
 /*===================================
   Icons
 ===================================*/
@@ -723,6 +824,7 @@ Typography / Fonts
   padding-top:100px;
   margin-top:-100px;  
 }
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -796,7 +898,9 @@ Typography / Fonts
     margin-left: 8px;
   }
 }
+
 /*===================================SBase Class Definition===================================*/
+
 .#{$fa-css-prefix} {
   display: inline-block;
   font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
@@ -804,8 +908,8 @@ Typography / Fonts
   text-rendering: auto; // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
+
 /*===================================Icon Sizes===================================*/
 
 /* makes the font 33% larger relative to the icon container */
@@ -820,6 +924,7 @@ Typography / Fonts
 .#{$fa-css-prefix}-5x { font-size: 5em; }
 
 /*===================================Stacked Icons===================================*/
+
 .#{$fa-css-prefix}-stack {
   position: relative;
   display: inline-block;
@@ -828,12 +933,14 @@ Typography / Fonts
   line-height: 2em;
   vertical-align: middle;
 }
+
 .#{$fa-css-prefix}-stack-1x, .#{$fa-css-prefix}-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
+
 .#{$fa-css-prefix}-stack-1x { line-height: inherit; }
 .#{$fa-css-prefix}-stack-2x { font-size: 2em; }
 .#{$fa-css-prefix}-inverse { color: $fa-inverse; }
@@ -898,6 +1005,7 @@ Typography / Fonts
 }
 
 /*===================================Fixed Width Icons===================================*/
+
 .#{$fa-css-prefix}-fw {
   width: (18em / 14);
   text-align: center;
@@ -907,6 +1015,7 @@ Typography / Fonts
 /*===================================
   Forms
 ===================================*/
+
 .forms {
   display:block;
   padding-top:100px;
@@ -916,6 +1025,7 @@ Typography / Fonts
 /*===================================
   Tables
 ===================================*/
+
 .tables {
   display:block;
   padding-top:100px;
@@ -979,160 +1089,67 @@ Typography / Fonts
       line-height: 35px;
       }         
   }
-
-/*
-
-.navbar-custom {
-  background-color: $primary;
-  border-radius: 0;
-  margin-bottom: 0;
-  padding: 0 10px 0 0;
-  min-height: 70px;
-
-  .nav-link {
-    padding: 0;
-    line-height: 70px;
-    color: $white;
-   }
-
-   a:hover {
-    color: $trenpink;
+/*===================================
+  Top Menu Responsive Code Start
+===================================*/
+@media (min-width: 962px) and  (max-width: 1242px) {
+  .btn {
+      font-size: 10px;
   }
 
-  .dropdown-toggle {
-    &:after {
-      content: initial;
-    }
+  .fa-lg {
+      font-size: 15px;
+  }  
+
+  .navbar-nav {
+    font-size: 12px;
   }
 
-  .menu-left {
-    overflow: hidden;
+  .navbar-brand {
+    font-size: 15px;
   }
 }
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: $navbar-brand-padding-y;
-  padding-bottom: $navbar-brand-padding-y;
-  margin-right: $navbar-padding-x;
-  font-size: $navbar-brand-font-size;
-  line-height: inherit;
-  white-space: nowrap;
-  float: left;
-
-  @include hover-focus {
-    text-decoration: none;
+@media (min-width: 795px) and (max-width: 961px) { 
+  .btn {
+      font-size: 10px;
   }
-  a:hover {
-    color: $trenpink;
+
+  .fa-lg {
+      font-size: 15px;
+  }  
+
+  .navbar-nav {
+    font-size: 12px;
   }
-}
 
-
-*/
-
-
-
-/*.profile {
-  img {
-    border: 2px solid #edf0f0;
-    height: 36px;
-    width: 36px;
+  .navbar-brand {
+    font-size: 15px;
+    display: none;
   }
 }
 
-/* Notification */
-/*.notification-list {
-  margin-left: 0 !important;
-
-  .noti-title {
-    margin-bottom: 0;
-    width: auto;
-    padding: 12px 20px;
-
-    h5 {
-      margin: 0;
-    }
-
-    .label {
-      float: right;
-    }
+@media (min-width: 768px) and (max-width: 794px) { 
+  .btn {
+      font-size: 10px;
   }
 
-  .noti-icon {
-    font-size: 18px;
-    padding: 0 12px;
-    vertical-align: middle;
-    color: rgba($white, 0.8);
-  }
-  .noti-icon-badge {
-    display: inline-block;
-    position: absolute;
-    top: 14px;
-    right: 8px;
-  }
-  .notify-item {
-    padding: 10px 20px;
+  .fa-lg {
+      font-size: 13px;
+  }  
 
-    .notify-icon {
-      float: left;
-      height: 36px;
-      width: 36px;
-      line-height: 36px;
-      text-align: center;
-      margin-right: 10px;
-      border-radius: 50%;
-      color: $white;
+  .navbar-nav {
+    font-size: 12px;
+  }
 
-      img {
-        margin-top: 4px;
-      }
-    }
-    .notify-details {
-      margin-bottom: 0;
-      overflow: hidden;
-      margin-left: 45px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      b {
-        font-weight: 500;
-      }
-      small {
-        display: block;
-      }
-      span {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        font-size: 13px;
-      }
-    }
-  }
-  .notify-all {
-    border-radius: 0 0 0.25rem 0.25rem;
-    margin: 0 0 -5px 0;
-    background-color: $light;
-  }
-  .profile-dropdown {
-    .notify-item {
-      padding: 4px 20px;
-    }
+  .navbar-brand {
+    font-size: 15px;
+    display: none;
   }
 }
-
-.profile-dropdown {
-  width: 170px;
-  i {
-    font-size: 17px;
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-  span {
-    vertical-align: middle;
-  }
-}
-*/
+/*===================================
+  Top Menu Responsive Code End
+===================================*/
 .nav-user {
   padding: 0 12px !important;
 
@@ -1410,6 +1427,7 @@ body.fixed-left {
 }
 
 /* Header 2 */
+
 .page-header-2 {
   background: $white;
   border-bottom: 1px solid #dee2e8;
@@ -1590,8 +1608,8 @@ body.fixed-left {
         }
       }
     }
-
   }
+
   #sidebar-menu > ul > li {
     &:hover > a.open {
       :after {
@@ -1613,7 +1631,6 @@ body.fixed-left {
 }
 
 /*mobile*/
-
 
 .tips-box {
   .portlet {
@@ -1656,6 +1673,7 @@ body.fixed-left {
 }
 
 /* Right sidebar */
+
 .side-bar.right-bar {
   float: right !important;
   right: -266px;
@@ -1760,6 +1778,7 @@ body.fixed-left {
 }
 
 /* Seach */
+
 .app-search {
   position: relative;
   padding-top: 18px;
