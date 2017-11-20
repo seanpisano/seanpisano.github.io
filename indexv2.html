@@ -33,6 +33,76 @@
   <link href="/css/fontpisano.css" rel="stylesheet">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">
+
+<!-- NEW CODE ================================================== -->
+<style type="text/css">
+
+ body,html {
+    height: 100%;
+}
+
+/* must be relative for scrollspy to work */
+body {
+    position: relative;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
+
+.navbar.affix-top,
+.navbar.affix-bottom {
+  position: static;
+}
+
+.navbar.affix{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  transition: all .35s ease;
+}
+
+#sidemenu.affix-top, #sidemenu.affix {
+  position: static;
+}
+
+#sidemenu.affix-bottom {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+    #sidemenu.affix {
+      position: fixed;
+      top: 40px;
+    }
+}
+
+.anchor{
+  display: block;
+  height: 70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
+
+footer a {
+    color: #ccc;
+}
+footer a:hover,
+footer a:focus{
+    color: #eee;
+} 
+
+
+</style>
+<!-- NEW CODE ================================================== -->
+
+
+
+
+
+
 <!-- End Stylesheets ================================================== -->
 </head>
 <!-- End Head ================================================== -->
@@ -485,6 +555,23 @@
   <script src="/js/jquery.scrollTo.min.js"></script> <!-- Custom main Js -->
   <script src="/js/jquery.core.js"></script> 
   <script src="/js/jquery.app.js"></script>
+<!-- NEW CODE ================================================== -->
+  <script>
+$('.navbar').affix({
+    offset:{
+        top: $('#header').outerHeight(),
+        bottom: $('#header').outerHeight() - 200
+    }
+});
+
+$('#sidemenu').affix({
+    offset:{
+        top: $('#header').outerHeight(),
+        bottom: ($('footer').height()-$('#header').height()) + $('#sidemenu').height()
+    }
+});
+</script>
+<!-- NEW CODE ================================================== -->
 <!-- End Body ================================================== -->
 </body>
 </html>
