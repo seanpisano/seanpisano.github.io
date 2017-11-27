@@ -19355,6 +19355,12 @@ Typography / Fonts
 /*===================================
   Menu
 ===================================*/
+.social-links-top a {
+  color: #763d6c; }
+
+.social-links-top a:hover {
+  color: #7d5a76; }
+
 .social-links li a {
   color: #763d6c; }
 
