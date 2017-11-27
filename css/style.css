@@ -18581,8 +18581,18 @@ Colors
 ===================================*/
 body {
   background: #f5f5f5;
-  font-family: 'pisano';
+  font-family: 'pisano'; }
+
+.sticky-page-nav {
   padding-top: 5rem; }
+
+.vh-100 {
+  min-height: 100vh; }
+
+.jumbotron-fluid {
+  /*background-image: url("/imgs/gmail.jpg");
+background-size: cover;*/
+  background-color: #471e3e; }
 
 .card-box {
   padding: 20px;
