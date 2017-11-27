@@ -36,121 +36,6 @@
 
 <!-- NEW CODE ================================================== -->
 <style type="text/css">
-.timeline {
-  border-left: 3px solid #00BCD4;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
-  position: relative;
-  padding: 0 30px;
-  margin-left: 280px;
-}
-.timeline .item {
-  position: relative;
-  margin-bottom: 45px;
-}
-.timeline .item:last-child {
-  margin-bottom: 0;
-}
-.timeline .item:before {
-  content: "";
-  position: absolute;
-  left: -43px;
-  top: 0;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #fff;
-  border: 3px solid #00BCD4;
-}
-.timeline .item:after {
-  content: "";
-  position: absolute;
-  left: -37px;
-  top: 6px;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #00BCD4;
-  z-index: 10;
-}
-.timeline .work-place {
-  position: relative;
-}
-.timeline .location {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  color: #8a8a8a;
-}
-.timeline .location .fa {
-  margin-right: 5px;
-}
-.timeline .place {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: 300;
-}
-.timeline .job-meta {
-  position: absolute;
-  left: -280px;
-  top: 0;
-}
-.timeline .job-meta .title {
-  font-size: 18px;
-  color: #00BCD4;
-}
-.timeline .job-meta .time {
-  color: #8a8a8a;
-}
-.timeline .job-desc {
-  color: #666;
-}
-
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-
-  .section {
-    padding: 30px;
-  }
-  .section-title {
-    font-size: 20px;
-  }
-  .timeline {
-    margin-left: 0;
-    padding-right: 0;
-  }
-  .timeline .place {
-    margin-bottom: 5px;
-  }
-  .timeline .job-meta {
-    position: static;
-    margin-bottom: 15px;
-  }
-}
-footer a {
-    color: #ccc;
-}
-footer a:hover,
-footer a:focus{
-    color: #eee;
-} 
 
 </style>
 <!-- End Stylesheets ================================================== -->
@@ -304,65 +189,70 @@ footer a:focus{
             <div class="row">
                 <div class="col">
                     <ul class="nav nav-tabs small" role="tablist">
-                        <li class="nav-item"><a class="nav-link text-uppercase active" data-toggle="tab" href="#tab1" role="tab">Home</a></li>
-                        <li class="nav-item ml-auto"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab2" role="tab">List</a></li>
-                        <li class="nav-item"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab3" role="tab">More</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase active" data-toggle="tab" href="#tab1" role="tab">Work Experience</a></li>
+                        <li class="nav-item ml-auto"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab2" role="tab">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase" data-toggle="tab" href="#tab3" role="tab">Education</a></li>
                     </ul>
                     <div class="tab-content py-3">
                         <div class="tab-pane active" id="tab1" role="tabpanel">
                             <h2 class="mb-3">Beautiful Content</h2>
-                            
-                            <span class="anchor" id="sec1"></span>
-
-
-
                                   <section id="experiences-section" class="experiences-section section">
                                   <h2 class="section-title">Work Experiences</h2>
                                   <div class="timeline">
                                   <div class="item">
                                   <div class="work-place">
-                                  <h3 class="place">Google</h3>
-                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mountain View</div>
+                                  <h3 class="place">ASME.org</h3>
+                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Manhattan NYC</div>
                                   </div>
                                   <div class="job-meta">
-                                  <div class="title">Senior Software Engineer</div>
-                                  <div class="time">2016 - Present</div>
+                                  <div class="title">Web Production Manager</div>
+                                  <div class="time">2012 - Present</div>
+                                    </div><!--//job-meta-->
+                                    <div class="job-desc">
+                                    <ul>
+                                      <li>Hire, manage, train, and mentor a team of 7 developers and content producers on average completing projects 20% ahead of schedule</li>
+                                      <li>Led designers, marketing, analytics, and the IT department in creating a process to code and send 25 emails in 7 days</li>
+                                      <li>Stack: HTML, CSS, JavaScript, JQuery, Bootstrap, Masonry, Modal Box, Animate.css, Toastr, Font Awesome, Kentico CMS</li>
+                                    </ul>
+                                    </div><!--//job-desc-->
+                                  </div><!--//item-->
+
+                                  <div class="item">
+                                  <div class="work-place">
+                                  <h3 class="place">Self Employed</h3>
+                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Brooklyn NYC</div>
+                                  </div>
+                                  <div class="job-meta">
+                                  <div class="title">Senior Web Developer <br />& Designer</div>
+                                  <div class="time">2001 - Present</div>
                                   </div><!--//job-meta-->
                                   <div class="job-desc">
-                                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
-                                  <ul>
-                                  <li>Lorem ipsum dolor sit amet</li>
-                                  <li>Donec pede justo ante</li>
-                                  <li>Maecenas tempus tellus eget </li>
-                                  </ul>
+                                    <ul>
+                                      <li>Managed, developed, and designed 150 projects for 30 companies and clients from prototyping and design to development and deployment</li>
+                                      <li>Created over 7,500 individual graphics, visuals, illustrations, logos, and print</li> 
+                                      <li>Spoke to clients to gather clear and concise requirements, provided thorough documentation, and created processes for updating and training the client teams to maintain products</li>
+                                      <li>Created email templates and setup a process for sending emails to increase sales.</li>
+                                      <li>Quickly and seamlessly converted PSD image templates to working HTML/CSS/JavaScript code</li>
+                                    </ul>
                                   </div><!--//job-desc-->
                                   </div><!--//item-->
 
                                   <div class="item">
                                   <div class="work-place">
-                                  <h3 class="place">Apple</h3>
-                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>New York</div>
+                                  <h3 class="place">Synergistic Marketing</h3>
+                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Manhattan NYC</div>
                                   </div>
                                   <div class="job-meta">
-                                  <div class="title">Lead Software Engineer</div>
-                                  <div class="time">2015 - 2016</div>
+                                  <div class="title">Web Master <br />& Production Manager</div>
+                                  <div class="time">2011</div>
                                   </div><!--//job-meta-->
                                   <div class="job-desc">
-                                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
-                                  </div><!--//job-desc-->
-                                  </div><!--//item-->
-
-                                  <div class="item">
-                                  <div class="work-place">
-                                  <h3 class="place">Twitter</h3>
-                                  <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>London</div>
-                                  </div>
-                                  <div class="job-meta">
-                                  <div class="title">Software Engineer</div>
-                                  <div class="time">2013 - 2015</div>
-                                  </div><!--//job-meta-->
-                                  <div class="job-desc">
-                                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+                                    <ul>
+                                      <li>Designed templates to replace the existing website in order to decrease customer confusion and increase aesthetic appeal</li>
+                                      <li>Replaced the CMS with WordPress for better workplace control, efficiency, and better data analytics of crucial user interactions</li>
+                                      <li>Conceptualized and created business cards, stationery, and promotional and sales materials</li>
+                                      <li>Led a team of printers, brand managers, and art directors to produce a products that were distributed to over 300,000 people worldwide</li>
+                                    </ul>
                                   </div><!--//job-desc-->
                                   </div><!--//item-->
 
@@ -379,18 +269,19 @@ footer a:focus{
                                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
                                   </div><!--//job-desc-->
                                   </div><!--//item-->
-
                                   </div><!--//timeline-->
-
                                   </section><!--//section-->
         
                         </div>
                         <div class="tab-pane" id="tab2" role="tabpanel">
                             <div class="card border-primary mb-3">
                                 <div class="card-body">
-                                    <h3 class="card-title">Primary</h3>
+                                    <h3 class="card-title">Stack</h3>
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-outline-secondary">Outline</a>
+                                    <div class="collapse" id="skillOne">
+                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                                    </div>
+                            <button class="btn btn-outline-secondary" data-toggle="collapse" data-target="#skillOne" aria-expanded="false" aria-controls="skillOne">Outline</button>
                                 </div>
                             </div>
                             <div class="card border-primary mb-3">
@@ -416,19 +307,11 @@ footer a:focus{
                             </div>
                         </div>
                         <div class="tab-pane" id="tab3" role="tabpanel">
-                            <h4>More content...</h4>
-                            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg
-                                slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's
-                                Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
-
-                            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote
-                                bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics
-                                ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
-
-                            <p>Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy
-                                messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation. Shabby chic
-                                lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
-
+                            <h4>Education</h4>
+                            <h5>2017 - General Assembly</h5>
+                            <p>Front-End Web Development</p> 
+                            <h5>Ongoing - New York City College of Technology</h5>
+                            <p>Bachelor of Technology in Communication Design</p>
                         </div>
                     </div>
                 </div>
