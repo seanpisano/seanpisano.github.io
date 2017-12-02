@@ -3,23 +3,48 @@
 /* Web Site: https//www.seanpisano.com */
 /* Contact: sean@seanpisano.com */
 /*=== Table of Contents ===*/
+/*
+1. Resets
+  1a. Width Variables 
+  1b. Height variables
+2. SCSS Imports
+3. Colors
+  3a. Grays
+  3b. Alt Colors
+  3c. Card Colors
+4. Main CSS 
+  4a. Footer CSS
+  4b. Responsive CSS 
+5. Helper CSS
+  5a. Helper CSS Responsive
+6. Style Guide
+  6a. Style Guide Mission
+  6b. Style Guide Logo
+    6b-1. Style Guide Responsive CSS Logo
+  6c. Style Guide Colour Palette
+  6d. Style Guide Typography / Fonts
+  6e. Style Guide Buttons
+    6e-1. Style Guide Button Outline 
 
 
+*/
 
+/*==== 1. Resets ====*/
+$link-color: #763d6c;
+$link-hover-color: #471e3e;
+/* Width Variables */
+$width: 100%;
+/* Height variables */
+$height: 100%;
 
-
-/*===================================
-1. SCSS Imports
-===================================*/
+/*==== 2. SCSS Imports ====*/
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "icons/font-awesome/scss/font-awesome";
 @import "icons/material-design/materialdesignicons";
 @import "icons/ionicons/scss/ionicons";
 @import "icons/themify-icons/themify-icons";
 @import "icons/weather-icons/sass/weather-icons.min";
-/*===================================
-2. Colors
-===================================*/
+/*==== 3. Colors ====*/
 $primary: #471e3e;
 $secondary:#763d6c;
 $success: #d4c39c;
@@ -38,7 +63,7 @@ $trenpink: #7d5a76;
 $eminence: #763d6c;
 $deeppurple: #471e3e;
 $white: #ffffff;
-
+/*==== 3a. Grays ====*/
 $lightgray: #dddddd;
 $light: #eeeeee;
 $lightdark3: #333333;
@@ -50,45 +75,31 @@ $light9: #f9f9f9;
 $light-alt: #fafafa;
 $lightdark7: #797979;
 $lightdark-alt: #cccccc;
-
-// Width variables
-$width: 100%;
-
-// Height variables
-$height: 100%;
-
+/*==== 3b. Alt Colors ====*/
 $bg-color: #f5f5f5;
 $bg-master: #471e3e;
 $bg-primary: $primary;
-
+/*==== 3b. Card Colors ====*/
 $card-border-color-maverick: $maverick;
 $card-border-color-putty: $putty;
 $card-border-color-dspanish: $dspanish;
 $card-border-color-trenpink: $trenpink;
 $card-border-color-eminence: $eminence;
 $card-border-color-deeppurple: $deeppurple;
-
-
-/*===================================
-3. Main CSS
-===================================*/
-
+/*==== 4. Main CSS ====*/
 body {
     background: $bg-color;
     font-family:'pisano';
 }
-
 .sticky-page-nav {
   padding-top: 5rem;
 }
-
 .vh-100 {
     min-height: 100vh;
 }
 .jumbotron-fluid {
 background-color:  #471e3e;
 }
-
 .card-box {
   padding: 20px;
   border: 1px solid rgba(54, 64, 74, .08);
@@ -99,9 +110,8 @@ background-color:  #471e3e;
   margin-bottom: 20px;
   background-color: $white;
 }
-
 .timeline {
-  border-left: 3px solid #00BCD4;
+  border-left: 3px solid #763d6c;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
@@ -132,7 +142,7 @@ background-color:  #471e3e;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #00BCD4;
+  border: 3px solid #763d6c;
 }
 .timeline .item:after {
   content: "";
@@ -150,7 +160,7 @@ background-color:  #471e3e;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #00BCD4;
+  background: #763d6c;
   z-index: 10;
 }
 .timeline .work-place {
@@ -178,7 +188,7 @@ background-color:  #471e3e;
 }
 .timeline .job-meta .title {
   font-size: 18px;
-  color: #00BCD4;
+  color: #763d6c;
 }
 .timeline .job-meta .time {
   color: #8a8a8a;
@@ -186,10 +196,19 @@ background-color:  #471e3e;
 .timeline .job-desc {
   color: #666;
 }
-
-/* Extra small devices (phones, less than 768px) */
+/*==== 4a. Footer CSS ====*/
+footer {
+  background-color:  #471e3e;
+  a {
+      color: #ccc;
+  }
+  a:hover,
+  a:focus {
+      color: #eee;
+  } 
+}
+/*==== 4b. Resonsive CSS (less than 768px) ====*/
 @media (max-width: 767px) {
-
   .section {
     padding: 30px;
   }
@@ -208,19 +227,7 @@ background-color:  #471e3e;
     margin-bottom: 15px;
   }
 }
-footer a {
-    color: #ccc;
-}
-footer a:hover,
-footer a:focus{
-    color: #eee;
-} 
-
-
-/*===================================
-   Helper classes
-===================================*/
-
+/*==== 5. Helper CSS ====*/
 .p-0 {
   padding: 0 !important;
 }
@@ -230,243 +237,186 @@ footer a:focus{
 .p-t-10 {
   padding-top: 10px !important;
 }
-
 .p-b-10 {
   padding-bottom: 10px !important;
 }
-
 .m-0 {
   margin: 0 !important;
 }
-
 .m-r-5 {
   margin-right: 5px;
 }
-
 .m-r-10 {
   margin-right: 10px;
 }
-
 .m-r-15 {
   margin-right: 15px !important;
 }
-
 .m-l-5 {
   margin-left: 5px;
 }
-
 .m-l-10 {
   margin-left: 10px;
 }
-
 .m-l-15 {
   margin-left: 15px;
 }
-
 .m-t-5 {
   margin-top: 5px !important;
 }
-
 .m-t-10 {
   margin-top: 10px !important;
 }
-
 .m-t-15 {
   margin-top: 15px !important;
 }
-
 .m-t-20 {
   margin-top: 20px !important;
 }
-
 .m-t-30 {
   margin-top: 30px !important;
 }
-
 .m-t-40 {
   margin-top: 40px !important;
 }
-
 .m-t-50 {
   margin-top: 50px;
 }
-
 .m-b-5 {
   margin-bottom: 5px;
 }
-
 .m-b-10 {
   margin-bottom: 10px;
 }
-
 .m-b-15 {
   margin-bottom: 15px;
 }
-
 .m-b-20 {
   margin-bottom: 20px;
 }
-
 .m-b-25 {
   margin-bottom: 25px;
 }
-
 .m-b-30 {
   margin-bottom: 30px !important;
 }
-
+/*==== 5a. Helper CSS Responsive ====*/
 @include media-breakpoint-up(xs) {   
 .ml-md-8, .mx-md-8 {
     margin-left: 4.5rem !important;
  }  
 }
-
 @include media-breakpoint-up(sm) {   
 .ml-md-8, .mx-md-8 {
     margin-left: 4.5rem !important;
  }  
 }
-
 @include media-breakpoint-up(md) {   
 .ml-md-8, .mx-md-8 {
     margin-left: 15rem !important;
  }  
 }
-
 @include media-breakpoint-up(lg) {   
 .ml-md-8, .mx-md-8 {
     margin-left: 15rem !important;
  }  
 }
-
 @include media-breakpoint-up(xl) {   
 .ml-md-8, .mx-md-8 {
     margin-left: 15rem !important;
  }  
 }
-
 .w-xs {
   min-width: 80px;
 }
-
 .w-sm {
   min-width: 95px;
 }
-
 .w-md {
   min-width: 110px;
 }
-
 .w-lg {
   min-width: 140px;
 }
-
 .m-h-50 {
   min-height: 50px;
 }
-
 .l-h-34 {
   line-height: 34px !important;
 }
-
 .font-light {
   font-weight: 300;
 }
-
 .font-normal {
   font-weight: normal;
 }
-
 .font-bold {
   font-weight: bold;
 }
-
 .font-13 {
   font-size: 13px;
 }
-
 .font-14 {
   font-size: 14px;
 }
-
 .font-15 {
   font-size: 15px;
 }
-
 .font-16 {
   font-size: 16px;
 }
-
 .font-18 {
   font-size: 18px;
 }
-
 .wrapper-md {
   padding: 20px;
 }
-
 .pull-in {
   margin-left: -20px;
   margin-right: -20px;
 }
-
 .b-0 {
   border: none !important;
 }
-
 .no-border {
   border: none;
 }
-
 .center-page {
   float: none !important;
   margin: 0 auto;
 }
-
 .bx-s-0 {
   box-shadow: none !important;
 }
-
 .bx-shadow {
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
-
 .mx-box {
   max-height: 380px;
   min-height: 380px;
 }
-
 .thumb-sm {
   height: 32px;
   width: 32px;
 }
-
 .thumb-md {
   height: 48px;
   width: 48px;
 }
-
 .thumb-lg {
   height: 88px;
   width: 88px;
 }
-
-/*===================================
-Mission
-===================================*/
-
+/*==== 6. Style Guide ====*/
+/*==== 6a. Style Guide Mission ====*/
 .mission {
   display:block;
   padding-top:100px;
   margin-top:-100px;
 }
-
-/*===================================
-Logo
-===================================*/
-
+/*==== 6b. Style Guide Logo ====*/
 .logo {
   display:block;
   padding-top:100px;
@@ -483,8 +433,7 @@ Logo
   padding-top:100px;
   margin-top:-100px;  
 }
-
-
+/*==== 6b-1. Style Guide Responsive CSS Logo ====*/
 @include media-breakpoint-up(xs) {   
   .logoOne {
     width: 230px;
@@ -493,7 +442,6 @@ Logo
     width: 100%;
   } 
 }
-
 @include media-breakpoint-up(sm) {   
   .logoOne {
     width: 210px; 
@@ -502,7 +450,6 @@ Logo
     width: 100%;
   }    
 }
-
 @include media-breakpoint-up(md) {   
   .logoOne {
     width: 185px;
@@ -511,7 +458,6 @@ Logo
     width: 100%;
   } 
 }
-
 @include media-breakpoint-up(lg) {   
   .logoOne {
     width: 350px;
@@ -520,7 +466,6 @@ Logo
     width: 100%;
   } 
 }
-
 @include media-breakpoint-up(xl) {   
   .logoOne {
     width: 400px;
@@ -529,16 +474,12 @@ Logo
     width: 100%;
   } 
 }
-
-/*===================================
-Colour Palette
-===================================*/
+/*==== 6c. Style Guide Colour Palette ====*/
 .colour {
   display:block;
   padding-top:100px;
   margin-top:-100px;  
 }
-
 .card-header-maverick {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -556,7 +497,6 @@ Colour Palette
     }
   }
 }
-
 .card-header-putty {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -574,7 +514,6 @@ Colour Palette
     }
   }
 }
-
 .card-header-dspanish {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -592,7 +531,6 @@ Colour Palette
     }
   }
 }
-
 .card-header-trenpink {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -610,7 +548,6 @@ Colour Palette
     }
   }
 }
-
 .card-header-eminence {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -628,7 +565,6 @@ Colour Palette
     }
   }
 }
-
 .card-header-deeppurple {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -646,65 +582,49 @@ Colour Palette
     }
   }
 }
-
-/*===================================
-Typography / Fonts
-===================================*/
+/*==== 6d. Style Guide Typography / Fonts ====*/
 .typography {
   display:block;
   padding-top:100px;
   margin-top:-100px;  
 }
-
 .letters {
   font-size: 18px;
   margin-bottom: 20px;
 }
-
 .s10:before {
-  content: '10px';
+  content: 10px;
 }
-
 .s11:before {
-  content: '11px';
+  content: 11px;
 }
-
 .s12:before {
-  content: '12px';
+  content: 12px;
 }
-
 .s14:before {
-  content: '14px';
+  content: 14px;
 }
-
 .s18:before {
-  content: '18px';
+  content: 18px;
 }
-
 .s24:before {
-  content: '24px';
+  content: 24px;
 }
-
 .s30:before {
-  content: '30px';
+  content: 30px;
 }
-
 .s36:before {
-  content: '36px';
+  content: 36px;
 }
-
 .s48:before {
-  content: '48px';
+  content: 48px;
 }
-
 .s60:before {
-  content: '60px';
+  content: 60px;
 }
-
 .s72:before {
-  content: '72px';
+  content: 72px;
 }
-
 .s10:before, .s11:before, .s12:before, .s14:before,
 .s18:before, .s24:before, .s30:before, .s36:before,
 .s48:before, .s60:before, .s72:before {
@@ -715,26 +635,20 @@ Typography / Fonts
   color: #999;
   padding-right: 6px;
 }
-
-/*===================================
-   Buttons
-===================================*/
+/*==== 6e. Style Guide Buttons ====*/
 .buttons {
   display:block;
   padding-top:100px;
   margin-top:-100px;  
 }
-
 .btn-primary, .btn-success, .btn-info, .btn-warning,
 .btn-danger, .btn-dark {
   color: $white;
 }
-
 .btn-primary {
   background-color: $primary;
   border: 1px solid $primary;
 }
-
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
 .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
 .open > .dropdown-toggle.btn-primary, .btn-outline-primary.active, .btn-outline-primary:active,
@@ -743,12 +657,10 @@ Typography / Fonts
   background-color: darken($primary, 5%);
   border: 1px solid darken($primary, 5%);
 }
-
 .btn-secondary {
   background-color: $secondary;
   border: 1px solid $secondary;
 }
-
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active,
 .btn-secondary.focus, .btn-primary:active, .btn-primary:focus, .btn-secondary:hover,
 .open > .dropdown-toggle.btn-secondary, .btn-outline-primary.active, .btn-outline-primary:active,
@@ -757,12 +669,10 @@ Typography / Fonts
   background-color: darken($primary, 5%);
   border: 1px solid darken($primary, 5%);
 }
-
 .btn-success {
   background-color: $success;
   border: 1px solid $success;
 }
-
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active,
 .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover,
 .open > .dropdown-toggle.btn-success, .btn-outline-success.active, .btn-outline-success:active,
@@ -771,12 +681,10 @@ Typography / Fonts
   background-color: darken($success, 5%);
   border: 1px solid darken($success, 5%);
 }
-
 .btn-info {
   background-color: $info;
   border: 1px solid $info;
 }
-
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.focus,
 .btn-info:active, .btn-info:focus, .btn-info:hover, .open > .dropdown-toggle.btn-info,
 .btn-outline-info.active, .btn-outline-info:active,
@@ -785,12 +693,10 @@ Typography / Fonts
   background-color: darken($info, 5%);
   border: 1px solid darken($info, 5%);
 }
-
 .btn-warning {
   background-color: $warning;
   border: 1px solid $warning;
 }
-
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active,
 .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover,
 .open > .dropdown-toggle.btn-warning, .btn-outline-warning.active, .btn-outline-warning:active,
@@ -800,12 +706,10 @@ Typography / Fonts
   border: 1px solid darken($warning, 5%);
   color: $white;
 }
-
 .btn-danger {
   background-color: $danger;
   border: 1px solid $danger;
 }
-
 .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .btn-danger.active,
 .btn-danger.focus, .btn-danger:active, .btn-danger:focus, .btn-danger:hover,
 .open > .dropdown-toggle.btn-danger, .btn-outline-danger.active, .btn-outline-danger:active,
@@ -814,13 +718,11 @@ Typography / Fonts
   background-color: darken($danger, 5%);
   border: 1px solid darken($danger, 5%);
 }
-
 .btn-dark {
   background-color: $dark;
   border: 1px solid $dark;
   color: $white;
 }
-
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active, .btn-dark.active, .btn-dark.focus,
 .btn-dark:active, .btn-dark:focus, .btn-dark:hover, .open > .dropdown-toggle.btn-dark,
 .btn-outline-dark.active, .btn-outline-dark:active,
@@ -829,112 +731,90 @@ Typography / Fonts
   border: 1px solid darken($dark, 5%);
   color: $white;
 }
-
 .btn-dark.focus, .btn-dark:focus, .btn-outline-dark.focus, .btn-outline-dark:focus {
   -webkit-box-shadow: 0 0 0 2px rgba($dark, .3);
   box-shadow: 0 0 0 2px rgba($dark, .3);
 }
-
 .btn-link {
   color: $dark;
   &:hover {
     color: $primary;
   }
 }
-
-/* button Outline */
+/*==== 6e-1. Style Guide Button Outline ====*/
 .btn-outline-primary {
   color: $primary;
   border-color: $primary;
 }
-
 .btn-outline-secondary {
   color: $dark;
   border-color: $secondary;
 }
-
 .btn-outline-secondary:hover {
     color: $white;
     background-color: $secondary;
     border-color: $white;
 }
-
 .btn-outline-secondary-nav {
   color: $white;
   border-color: $secondary;
 }
-
 .btn-outline-secondary-nav:hover {
     color: $white !important;
     background-color: $trenpink;
     border-color: $white;
 }
-
 .btn-outline-success {
   color: $success;
   border-color: $success;
 }
-
 .btn-outline-info {
   color: $info;
   border-color: $info;
 }
-
 .btn-outline-warning {
   color: $warning;
   border-color: $warning;
 }
-
 .btn-outline-danger {
   color: $danger;
   border-color: $danger;
 }
-
 .btn-outline-dark {
   color: $dark;
   background-image: none;
   background-color: transparent;
   border-color: $dark;
 }
-
 .btn-custom {
   border-bottom: 3px solid transparent;
 }
-
 .btn-custom.btn-default {
   background-color: $light3;
   border-bottom: 2px solid $lightdark-alt !important;
 }
-
 .btn-custom.btn-primary {
   border-bottom: 2px solid darken($primary, 10%) !important;
 }
-
 .btn-custom.btn-success {
   border-bottom: 2px solid darken($success, 10%) !important;
 }
-
 .btn-custom.btn-info {
   border-bottom: 2px solid darken($info, 20%) !important;
 }
-
 .btn-custom.btn-warning {
   border-bottom: 2px solid darken($warning, 10%) !important;
 }
-
 .btn-custom.btn-danger {
   border-bottom: 2px solid darken($danger, 20%) !important;
 }
-
 .btn-custom.btn-dark {
   border-bottom: 2px solid darken($inverse, 30%) !important;
 }
-
 .btn-rounded {
   border-radius: 2em;
   padding: 6px 18px;
 }
-
 .fileupload {
   overflow: hidden;
   position: relative;
@@ -950,16 +830,12 @@ Typography / Fonts
     top: 0;
   }
 }
-
-/*===================================
-  Icons
-===================================*/
+/*==== 6f. Style Guide Icons ====*/
 .icons {
   display:block;
   padding-top:100px;
   margin-top:-100px;  
 }
-
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -968,7 +844,6 @@ Typography / Fonts
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-list-demo {
   div {
     cursor: pointer;
@@ -1007,7 +882,6 @@ Typography / Fonts
     }
   }
 }
-
 .ionicon-list {
   i {
     font-size: 16px;
@@ -1023,7 +897,6 @@ Typography / Fonts
     }
   }
 }
-
 .button-list {
   margin-left: -8px;
   margin-bottom: -12px;
@@ -1033,9 +906,7 @@ Typography / Fonts
     margin-left: 8px;
   }
 }
-
-/*===================================SBase Class Definition===================================*/
-
+/*==== 6f-1. Style Guide Icons SBase Class Definition ====*/
 .#{$fa-css-prefix} {
   display: inline-block;
   font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
@@ -1044,9 +915,7 @@ Typography / Fonts
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/*===================================Icon Sizes===================================*/
-
+/*==== 6f-2. Style Guide Icon Icon Sizes ====*/
 /* makes the font 33% larger relative to the icon container */
 .#{$fa-css-prefix}-lg {
   font-size: (4em / 3);
@@ -1057,9 +926,7 @@ Typography / Fonts
 .#{$fa-css-prefix}-3x { font-size: 3em; }
 .#{$fa-css-prefix}-4x { font-size: 4em; }
 .#{$fa-css-prefix}-5x { font-size: 5em; }
-
-/*===================================Stacked Icons===================================*/
-
+/*==== 6f-3. Style Guide Icon Stacked Icons ====*/
 .#{$fa-css-prefix}-stack {
   position: relative;
   display: inline-block;
@@ -1068,30 +935,24 @@ Typography / Fonts
   line-height: 2em;
   vertical-align: middle;
 }
-
 .#{$fa-css-prefix}-stack-1x, .#{$fa-css-prefix}-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center;
 }
-
 .#{$fa-css-prefix}-stack-1x { line-height: inherit; }
 .#{$fa-css-prefix}-stack-2x { font-size: 2em; }
 .#{$fa-css-prefix}-inverse { color: $fa-inverse; }
-
-/*===================================Spinning Icons===================================*/
-
+/*==== 6f-4. Style Guide Icon Spinning Icons ====*/
 .#{$fa-css-prefix}-spin {
   -webkit-animation: fa-spin 2s infinite linear;
           animation: fa-spin 2s infinite linear;
 }
-
 .#{$fa-css-prefix}-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
           animation: fa-spin 1s infinite steps(8);
 }
-
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1102,7 +963,6 @@ Typography / Fonts
             transform: rotate(359deg);
   }
 }
-
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -1113,24 +973,19 @@ Typography / Fonts
             transform: rotate(359deg);
   }
 }
-
-/*===================================Bordered & Pulled===================================*/
-
+/*==== 6f-4. Style Guide Icon Bordered & Pulled ====*/
 .#{$fa-css-prefix}-border {
   padding: .2em .25em .15em;
   border: solid .08em $fa-border-color;
   border-radius: .1em;
 }
-
 .#{$fa-css-prefix}-pull-left { float: left; }
 .#{$fa-css-prefix}-pull-right { float: right; }
-
 .#{$fa-css-prefix} {
   &.#{$fa-css-prefix}-pull-left { margin-right: .3em; }
   &.#{$fa-css-prefix}-pull-right { margin-left: .3em; }
 }
-
-/* Deprecated as of 4.4.0 */
+/*==== 6f-5. Style Guide Icon Deprecated as of 4.4.0 ====*/
 .pull-right { float: right; }
 .pull-left { float: left; }
 
@@ -1138,29 +993,18 @@ Typography / Fonts
   &.pull-left { margin-right: .3em; }
   &.pull-right { margin-left: .3em; }
 }
-
-/*===================================Fixed Width Icons===================================*/
-
+/*==== 6f-6. Style Guide Icon Fixed Width Icons ====*/
 .#{$fa-css-prefix}-fw {
   width: (18em / 14);
   text-align: center;
 }
-
-
-/*===================================
-  Forms
-===================================*/
-
+/*==== 6g. Style Guide Forms ====*/
 .forms {
   display:block;
   padding-top:100px;
   margin-top:-100px;  
 }
-
-/*===================================
-  Tables
-===================================*/
-
+/*==== 6h. Style Guide Tables ====*/
 .tables {
   display:block;
   padding-top:100px;
@@ -1178,7 +1022,6 @@ Typography / Fonts
       color: $trenpink;
     }
 }
-
 .social-links {
   li {
     a {
@@ -1189,7 +1032,6 @@ Typography / Fonts
     }
   }
 }
-
 .navbar {
   background-color: $primary;
   border-radius: 0;
@@ -1221,7 +1063,6 @@ Typography / Fonts
     overflow: hidden;
   }
 }
-
 .navbar-collapse {
   padding-left: 10px;
     .social-links {
@@ -1239,52 +1080,41 @@ Typography / Fonts
   .btn {
       font-size: 10px;
   }
-
   .fa-lg {
       font-size: 15px;
   }  
-
   .navbar-nav {
     font-size: 12px;
   }
-
   .navbar-brand {
     font-size: 15px;
   }
 }
-
 @media (min-width: 795px) and (max-width: 961px) { 
   .btn {
       font-size: 10px;
   }
-
   .fa-lg {
       font-size: 15px;
   }  
-
   .navbar-nav {
     font-size: 12px;
   }
-
   .navbar-brand {
     font-size: 15px;
     display: none;
   }
 }
-
 @media (min-width: 768px) and (max-width: 794px) { 
   .btn {
       font-size: 10px;
   }
-
   .fa-lg {
       font-size: 13px;
   }  
-
   .navbar-nav {
     font-size: 12px;
   }
-
   .navbar-brand {
     font-size: 15px;
     display: none;
@@ -1301,25 +1131,21 @@ Typography / Fonts
     width: 36px;
   }
 }
-
 .navbar-nav {
   margin: 0;
 }
-
 .side-menu {
   bottom: 0;
   top: 0;
   width: 240px;
   z-index: 2;
 }
-
 .side-menu.left {
   background: $white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 70px;
 }
-
 body.fixed-left {
   .side-menu.left {
     bottom: 50px;
@@ -1330,18 +1156,15 @@ body.fixed-left {
     position: fixed;
   }
 }
-
 .content-page {
   margin-left: 240px;
   overflow: hidden;
 }
-
 .content-page > .content {
   margin-bottom: 60px;
   margin-top: 70px;
   padding: 20px 5px 15px 5px;
 }
-
 .button-menu-mobile {
   border: none;
   color: $white;
@@ -1351,11 +1174,9 @@ body.fixed-left {
   background-color: $primary;
   font-size: 24px;
 }
-
 .sidebar-inner {
   height: $height;
 }
-
 #sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
   border: 0;
   font-weight: normal;
@@ -1366,7 +1187,6 @@ body.fixed-left {
   position: relative;
   text-decoration: none;
 }
-
 #sidebar-menu {
   padding-bottom: 30px;
   padding-top: 22px;
@@ -1422,7 +1242,6 @@ body.fixed-left {
     border-left: 3px solid $primary;
   }
 }
-
 #sidebar-menu > ul > li > a {
   color: $dark;
   display: block;
@@ -1434,11 +1253,9 @@ body.fixed-left {
     text-decoration: none;
   }
 }
-
 #sidebar-menu > ul > li > a > span {
   vertical-align: middle;
 }
-
 #sidebar-menu {
   ul {
     li {
@@ -1490,17 +1307,14 @@ body.fixed-left {
     }
   }
 }
-
 #sidebar-menu > ul > li > a > i.i-right {
   float: right;
   margin: 3px 0 0 0;
 }
-
 #sidebar-menu > ul > li > a.active {
   background: $light5 !important;
   border-left: 3px solid $primary;
 }
-
 .menu-title {
   padding: 12px 20px !important;
   letter-spacing: .035em;
@@ -1508,14 +1322,12 @@ body.fixed-left {
   cursor: default;
   font-size: 13px;
 }
-
 .page-title {
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.1rem;
   float: left;
 }
-
 .page-title-box {
   background: $white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, .03), 0 1px 0 rgba(0, 0, 0, .03);
@@ -1527,9 +1339,7 @@ body.fixed-left {
     padding: 0;
   }
 }
-
 /* Small Menu */
-
 .side-menu-sm {
   width: 180px;
   text-align: center;
@@ -1544,7 +1354,6 @@ body.fixed-left {
     padding: 10px 20px 10px 20px;
   }
 }
-
 .side-menu-sm + .content-page {
   .footer {
     left: 180px;
@@ -1553,7 +1362,6 @@ body.fixed-left {
  .side-menu-sm {
   text-align: left;
 }
-
  .side-menu-sm #sidebar-menu ul li a i {
   display: inline-block;
   font-size: 18px;
@@ -1563,21 +1371,16 @@ body.fixed-left {
   vertical-align: middle;
   width: 20px;
 }
-
-
 .side-menu-sm + .content-page {
   margin-left: 180px;
 }
-
 /* Header 2 */
-
 .page-header-2 {
   background: $white;
   border-bottom: 1px solid #dee2e8;
   margin: -20px -15px 22px -15px;
   padding: 10px 20px 0 20px;
 }
-
 @media (max-width:768px) {
 
 #mobile-master {
@@ -1752,7 +1555,6 @@ body.fixed-left {
       }
     }
   }
-
   #sidebar-menu > ul > li {
     &:hover > a.open {
       :after {
@@ -1765,14 +1567,12 @@ body.fixed-left {
       }
     }
   }
-
   .tips-box {
     display: none;
   }
 }
 
 }
-
 /*mobile*/
 
 .tips-box {
@@ -1782,7 +1582,6 @@ body.fixed-left {
     box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.05);
   }
 }
-
 .user-details {
   padding: 20px;
   padding-bottom: 0;
@@ -1805,7 +1604,6 @@ body.fixed-left {
     }
   }
 }
-
 #wrapper.right-bar-enabled {
   .right-bar {
     right: 0;
@@ -1814,9 +1612,7 @@ body.fixed-left {
     left: 0;
   }
 }
-
 /* Right sidebar */
-
 .side-bar.right-bar {
   float: right !important;
   right: -266px;
@@ -1824,7 +1620,6 @@ body.fixed-left {
   bottom: 0;
   font-size: 0.9rem;
 }
-
 .side-bar {
   -moz-transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
@@ -1837,7 +1632,6 @@ body.fixed-left {
   transition: all 200ms ease-out;
   width: 240px;
 }
-
 .right-bar {
   background: $white !important;
   z-index: 99 !important;
@@ -1853,7 +1647,6 @@ body.fixed-left {
     padding: 20px;
   }
 }
-
 .contact-list {
   max-height: 600px;
 
@@ -1876,7 +1669,6 @@ body.fixed-left {
     color: $warning;
   }
 }
-
 .contacts-list {
   .avatar {
     display: inline-block;
@@ -1919,9 +1711,7 @@ body.fixed-left {
     color: $warning;
   }
 }
-
 /* Seach */
-
 .app-search {
   position: relative;
   padding-top: 18px;
@@ -1941,7 +1731,6 @@ body.fixed-left {
       color: $white;
     }
   }
-
   .form-control,
   .form-control:focus {
     border: 1px solid rgba($white, 0.1);
@@ -1956,7 +1745,6 @@ body.fixed-left {
     width: 200px;
   }
 }
-
 .app-search input {
   &::-webkit-input-placeholder {
     color: rgba($white, 70%);
@@ -1971,8 +1759,6 @@ body.fixed-left {
     color: rgba($white, 70%);
   }
 }
-
-
 /* ===========
    Waves Effect
  =============*/
@@ -1984,7 +1770,6 @@ body.fixed-left {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
-
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -2004,7 +1789,6 @@ body.fixed-left {
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 .waves-effect {
   .waves-ripple {
     position: absolute;
@@ -2032,55 +1816,46 @@ body.fixed-left {
     pointer-events: none;
   }
 }
-
 .waves-effect.waves-light {
   .waves-ripple {
     background-color: rgba(255, 255, 255, 0.45);
   }
 }
-
 .waves-effect.waves-red {
   .waves-ripple {
     background-color: rgba(244, 67, 54, 0.7);
   }
 }
-
 .waves-effect.waves-yellow {
   .waves-ripple {
     background-color: rgba(255, 235, 59, 0.7);
   }
 }
-
 .waves-effect.waves-orange {
   .waves-ripple {
     background-color: rgba(255, 152, 0, 0.7);
   }
 }
-
 .waves-effect.waves-purple {
   .waves-ripple {
     background-color: rgba(156, 39, 176, 0.7);
   }
 }
-
 .waves-effect.waves-green {
   .waves-ripple {
     background-color: rgba(76, 175, 80, 0.7);
   }
 }
-
 .waves-effect.waves-teal {
   .waves-ripple {
     background-color: rgba(0, 150, 136, 0.7);
   }
 }
-
 .waves-effect.waves-primary {
   .waves-ripple {
     background-color: fade($primary, 40%);
   }
 }
-
 .waves-notransition {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -2088,7 +1863,6 @@ body.fixed-left {
   -ms-transition: none !important;
   transition: none !important;
 }
-
 .waves-circle {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -2102,7 +1876,6 @@ body.fixed-left {
   border-radius: 50%;
   -webkit-mask-image: none;
 }
-
 .waves-input-wrapper {
   border-radius: 0.2em;
   vertical-align: bottom;
@@ -2113,7 +1886,6 @@ body.fixed-left {
     z-index: 1;
   }
 }
-
 .waves-block {
   display: block;
 }

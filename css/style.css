@@ -4,9 +4,35 @@
 /* Web Site: https//www.seanpisano.com */
 /* Contact: sean@seanpisano.com */
 /*=== Table of Contents ===*/
-/*===================================
-1. SCSS Imports
-===================================*/
+/*
+1. Resets
+  1a. Width Variables 
+  1b. Height variables
+2. SCSS Imports
+3. Colors
+  3a. Grays
+  3b. Alt Colors
+  3c. Card Colors
+4. Main CSS 
+  4a. Footer CSS
+  4b. Responsive CSS 
+5. Helper CSS
+  5a. Helper CSS Responsive
+6. Style Guide
+  6a. Style Guide Mission
+  6b. Style Guide Logo
+    6b-1. Style Guide Responsive CSS Logo
+  6c. Style Guide Colour Palette
+  6d. Style Guide Typography / Fonts
+  6e. Style Guide Buttons
+    6e-1. Style Guide Button Outline 
+
+
+*/
+/*==== 1. Resets ====*/
+/* Width Variables */
+/* Height variables */
+/*==== 2. SCSS Imports ====*/
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -189,12 +215,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #763d6c;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #0056b3;
+    color: #471e3e;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -1961,10 +1987,10 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #763d6c;
   background-color: transparent; }
   .btn-link:hover {
-    color: #0056b3;
+    color: #471e3e;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -3058,11 +3084,11 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #763d6c;
   background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
-    color: #0056b3;
+    color: #471e3e;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #ddd; }
@@ -18584,12 +18610,11 @@ a.text-dark:focus, a.text-dark:hover {
 .wi-owm-night-957:before {
   content: ""; }
 
-/*===================================
-2. Colors
-===================================*/
-/*===================================
-3. Main CSS
-===================================*/
+/*==== 3. Colors ====*/
+/*==== 3a. Grays ====*/
+/*==== 3b. Alt Colors ====*/
+/*==== 3b. Card Colors ====*/
+/*==== 4. Main CSS ====*/
 body {
   background: #f5f5f5;
   font-family: 'pisano'; }
@@ -18614,7 +18639,7 @@ body {
   background-color: #ffffff; }
 
 .timeline {
-  border-left: 3px solid #00BCD4;
+  border-left: 3px solid #763d6c;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
@@ -18645,7 +18670,7 @@ body {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #00BCD4; }
+  border: 3px solid #763d6c; }
 
 .timeline .item:after {
   content: "";
@@ -18663,7 +18688,7 @@ body {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #00BCD4;
+  background: #763d6c;
   z-index: 10; }
 
 .timeline .work-place {
@@ -18691,7 +18716,7 @@ body {
 
 .timeline .job-meta .title {
   font-size: 18px;
-  color: #00BCD4; }
+  color: #763d6c; }
 
 .timeline .job-meta .time {
   color: #8a8a8a; }
@@ -18699,7 +18724,16 @@ body {
 .timeline .job-desc {
   color: #666; }
 
-/* Extra small devices (phones, less than 768px) */
+/*==== 4a. Footer CSS ====*/
+footer {
+  background-color: #471e3e; }
+  footer a {
+    color: #ccc; }
+  footer a:hover,
+  footer a:focus {
+    color: #eee; }
+
+/*==== 4b. Resonsive CSS (less than 768px) ====*/
 @media (max-width: 767px) {
   .section {
     padding: 30px; }
@@ -18714,16 +18748,7 @@ body {
     position: static;
     margin-bottom: 15px; } }
 
-footer a {
-  color: #ccc; }
-
-footer a:hover,
-footer a:focus {
-  color: #eee; }
-
-/*===================================
-   Helper classes
-===================================*/
+/*==== 5. Helper CSS ====*/
 .p-0 {
   padding: 0 !important; }
 
@@ -18796,6 +18821,7 @@ footer a:focus {
 .m-b-30 {
   margin-bottom: 30px !important; }
 
+/*==== 5a. Helper CSS Responsive ====*/
 .ml-md-8, .mx-md-8 {
   margin-left: 4.5rem !important; }
 
@@ -18898,17 +18924,14 @@ footer a:focus {
   height: 88px;
   width: 88px; }
 
-/*===================================
-Mission
-===================================*/
+/*==== 6. Style Guide ====*/
+/*==== 6a. Style Guide Mission ====*/
 .mission {
   display: block;
   padding-top: 100px;
   margin-top: -100px; }
 
-/*===================================
-Logo
-===================================*/
+/*==== 6b. Style Guide Logo ====*/
 .logo {
   display: block;
   padding-top: 100px;
@@ -18924,6 +18947,7 @@ Logo
   padding-top: 100px;
   margin-top: -100px; }
 
+/*==== 6b-1. Style Guide Responsive CSS Logo ====*/
 .logoOne {
   width: 230px; }
 
@@ -18954,9 +18978,7 @@ Logo
   .logoAlt {
     width: 100%; } }
 
-/*===================================
-Colour Palette
-===================================*/
+/*==== 6c. Style Guide Colour Palette ====*/
 .colour {
   display: block;
   padding-top: 100px;
@@ -19028,9 +19050,7 @@ Colour Palette
   .card-header-deeppurple + .list-group .list-group-item:first-child {
     border-top: 0; }
 
-/*===================================
-Typography / Fonts
-===================================*/
+/*==== 6d. Style Guide Typography / Fonts ====*/
 .typography {
   display: block;
   padding-top: 100px;
@@ -19041,37 +19061,37 @@ Typography / Fonts
   margin-bottom: 20px; }
 
 .s10:before {
-  content: '10px'; }
+  content: 10px; }
 
 .s11:before {
-  content: '11px'; }
+  content: 11px; }
 
 .s12:before {
-  content: '12px'; }
+  content: 12px; }
 
 .s14:before {
-  content: '14px'; }
+  content: 14px; }
 
 .s18:before {
-  content: '18px'; }
+  content: 18px; }
 
 .s24:before {
-  content: '24px'; }
+  content: 24px; }
 
 .s30:before {
-  content: '30px'; }
+  content: 30px; }
 
 .s36:before {
-  content: '36px'; }
+  content: 36px; }
 
 .s48:before {
-  content: '48px'; }
+  content: 48px; }
 
 .s60:before {
-  content: '60px'; }
+  content: 60px; }
 
 .s72:before {
-  content: '72px'; }
+  content: 72px; }
 
 .s10:before, .s11:before, .s12:before, .s14:before,
 .s18:before, .s24:before, .s30:before, .s36:before,
@@ -19083,9 +19103,7 @@ Typography / Fonts
   color: #999;
   padding-right: 6px; }
 
-/*===================================
-   Buttons
-===================================*/
+/*==== 6e. Style Guide Buttons ====*/
 .buttons {
   display: block;
   padding-top: 100px;
@@ -19190,7 +19208,7 @@ Typography / Fonts
   .btn-link:hover {
     color: #471e3e; }
 
-/* button Outline */
+/*==== 6e-1. Style Guide Button Outline ====*/
 .btn-outline-primary {
   color: #471e3e;
   border-color: #471e3e; }
@@ -19278,9 +19296,7 @@ Typography / Fonts
     right: 0;
     top: 0; }
 
-/*===================================
-  Icons
-===================================*/
+/*==== 6f. Style Guide Icons ====*/
 .icons {
   display: block;
   padding-top: 100px;
@@ -19340,7 +19356,7 @@ Typography / Fonts
     margin-bottom: 12px;
     margin-left: 8px; }
 
-/*===================================SBase Class Definition===================================*/
+/*==== 6f-1. Style Guide Icons SBase Class Definition ====*/
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -19349,7 +19365,7 @@ Typography / Fonts
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/*===================================Icon Sizes===================================*/
+/*==== 6f-2. Style Guide Icon Icon Sizes ====*/
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333em;
@@ -19368,7 +19384,7 @@ Typography / Fonts
 .fa-5x {
   font-size: 5em; }
 
-/*===================================Stacked Icons===================================*/
+/*==== 6f-3. Style Guide Icon Stacked Icons ====*/
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -19392,7 +19408,7 @@ Typography / Fonts
 .fa-inverse {
   color: #fff; }
 
-/*===================================Spinning Icons===================================*/
+/*==== 6f-4. Style Guide Icon Spinning Icons ====*/
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
@@ -19417,7 +19433,7 @@ Typography / Fonts
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
-/*===================================Bordered & Pulled===================================*/
+/*==== 6f-4. Style Guide Icon Bordered & Pulled ====*/
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eee;
@@ -19435,7 +19451,7 @@ Typography / Fonts
 .fa.fa-pull-right {
   margin-left: .3em; }
 
-/* Deprecated as of 4.4.0 */
+/*==== 6f-5. Style Guide Icon Deprecated as of 4.4.0 ====*/
 .pull-right {
   float: right; }
 
@@ -19448,22 +19464,18 @@ Typography / Fonts
 .fa.pull-right {
   margin-left: .3em; }
 
-/*===================================Fixed Width Icons===================================*/
+/*==== 6f-6. Style Guide Icon Fixed Width Icons ====*/
 .fa-fw {
   width: 1.28571em;
   text-align: center; }
 
-/*===================================
-  Forms
-===================================*/
+/*==== 6g. Style Guide Forms ====*/
 .forms {
   display: block;
   padding-top: 100px;
   margin-top: -100px; }
 
-/*===================================
-  Tables
-===================================*/
+/*==== 6h. Style Guide Tables ====*/
 .tables {
   display: block;
   padding-top: 100px;
