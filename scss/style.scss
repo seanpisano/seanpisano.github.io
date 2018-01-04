@@ -7,11 +7,12 @@
 1. Resets
   1a. Width Variables 
   1b. Height variables
-2. SCSS Imports
-3. Colors
-  3a. Grays
-  3b. Alt Colors
-  3c. Card Colors
+
+2. Colors
+  2a. Grays
+  2b. Alt Colors
+  2c. Card Colors
+3. SCSS Imports
 4. Main CSS 
   4a. Footer CSS
   4b. Responsive CSS 
@@ -37,15 +38,7 @@ $width: 100%;
 /* Height variables */
 $height: 100%;
 
-
-/*==== 2. SCSS Imports ====*/
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "icons/font-awesome/scss/font-awesome";
-@import "icons/material-design/materialdesignicons";
-@import "icons/ionicons/scss/ionicons";
-@import "icons/themify-icons/themify-icons";
-@import "icons/weather-icons/sass/weather-icons.min";
-/*==== 3. Colors ====*/
+/*==== 2. Colors ====*/
 $primary: #471e3e;
 $secondary:#763d6c;
 $success: #d4c39c;
@@ -64,7 +57,8 @@ $trenpink: #7d5a76;
 $eminence: #763d6c;
 $deeppurple: #471e3e;
 $white: #ffffff;
-/*==== 3a. Grays ====*/
+
+/*==== 2a. Grays ====*/
 $lightgray: #dddddd;
 $light: #eeeeee;
 $lightdark3: #333333;
@@ -76,17 +70,26 @@ $light9: #f9f9f9;
 $light-alt: #fafafa;
 $lightdark7: #797979;
 $lightdark-alt: #cccccc;
-/*==== 3b. Alt Colors ====*/
+/*==== 2b. Alt Colors ====*/
 $bg-color: #f5f5f5;
 $bg-master: #471e3e;
 $bg-primary: $primary;
-/*==== 3b. Card Colors ====*/
+/*==== 2b. Card Colors ====*/
 $card-border-color-maverick: $maverick;
 $card-border-color-putty: $putty;
 $card-border-color-dspanish: $dspanish;
 $card-border-color-trenpink: $trenpink;
 $card-border-color-eminence: $eminence;
 $card-border-color-deeppurple: $deeppurple;
+
+/*==== 3. SCSS Imports ====*/
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "icons/font-awesome/scss/font-awesome";
+@import "icons/material-design/materialdesignicons";
+@import "icons/ionicons/scss/ionicons";
+@import "icons/themify-icons/themify-icons";
+@import "icons/weather-icons/sass/weather-icons.min";
+
 /*==== 4. Main CSS ====*/
 body {
     background: $bg-color;
