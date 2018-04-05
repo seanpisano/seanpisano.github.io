@@ -1,13 +1,13 @@
-<?php
+
 // require ReCaptcha class
-require('recaptcha-master/src/autoload.php');
+require('php/autoload.php');
 
 // configure
 
 $from = 'sean@seanpisano.com';
 $sendTo = 'sean@seanpisano.com';
 $subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 $recaptchaSecret = '6LcO9z0UAAAAANQEYbQBuptmPv9IVkHDoSs2Pb7C';
