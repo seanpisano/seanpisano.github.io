@@ -1,6 +1,6 @@
 <?php
 // require ReCaptcha class
-require('php/autoload.php');
+require('../php/recaptcha-master/src/autoload.php');
 
 
 // configure
