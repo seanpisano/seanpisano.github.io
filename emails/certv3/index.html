@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+   <head>     
+      <title>Dark Certificate Example v3</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="format-detection" content="date=no">
+      <meta name="format-detection" content="address=no">
+      <meta name="format-detection" content="email=no">
+      <!--[if !mso]><!-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--<![endif]-->
+      <!--[if gte mso 9]>
+      <xml>
+         <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+         </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+      
+      <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {
+        border-collapse: collapse;
+        border-spacing: 0; 
+        mso-line-height-rule: exactly; 
+        mso-margin-bottom-alt: 0; 
+        mso-margin-top-alt: 0; 
+        mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+        </style>
+         <![endif]-->
+         
+      <style type="text/css">
+         p {padding-bottom: 10px !important;}
+         a {color:#7d2873;}
+         p,
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {Margin:0 !important;}
+         #outlook a { padding: 0;}
+         .ReadMsgBody { width: 100%;}
+         .ExternalClass { width: 100%;}
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+         body { margin: 0 auto; padding: 0; width: 100% !important; height: 100% !important; }
+         table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+         img { -ms-interpolation-mode: bicubic; }
+         body { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
+         img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+         table { border-collapse: collapse !important;}
+         a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important;
+         font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;
+         }
+      </style>
+
+      <style type="text/css">
+         /* mobile styles here */
+         @media screen and (max-width: 580px) {
+         /* standard responsive classes */
+         .responsive {
+         width:100% !important;
+         }
+         .responsive90 {
+         width:90% !important;
+         }
+         .img_max {
+         width:100% !important;
+         height:auto !important;
+         }
+         .hauto {
+         height:auto !important;
+         }
+         .center_this {
+         text-align:center !important;
+         }
+         .center_button {
+         margin: 0 auto !important;
+         }
+         .hide {
+         display:none !important;
+         height:0 !important;
+         width:0 !important;
+         overflow:hidden !important;
+         visibility: hidden !important;
+         }
+         /* padding */
+         .pb_25 {
+         padding:0 0 25px 0 !important;
+         }
+         .pt_25 {
+         padding:25px 0 0 0 !important;
+         }
+         .pb_20 {
+            padding:0 0 20px 0 !important;
+         }
+         .p_25_0 {
+         padding:25px 0 !important;
+         }
+         .p_20_10 {
+            padding:20px 10px !important;
+         }
+         .p_25_10 {
+            padding:25px 10px !important;
+         }
+         .p_0 {
+         padding:0 0 0 0 !important;
+         }
+         .p_8_0_8_0 {
+         padding:8px 0 8px 0 !important;
+         }
+         /* fonts */
+         .font12 {
+         font-size:11px !important;
+         line-height:13px !important;
+         }
+         }
+      </style>
+      <!--End-->
+      <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css" media="all">
+         table {border-collapse:collapse;}
+      </style>
+      <![endif]-->
+    <!--[if gt mso 15]>
+     <style type="text/css" media="all">
+     /* Outlook 2016 Height Fix */
+     table, tr, td {border-collapse: collapse;}
+     tr { font-size:0px; line-height:0px; border-collapse: collapse; }
+     </style>
+     <![endif]-->
+
+   </head>
+   <body style="margin: 0; padding: 0; background-color:#ffffff">
+<!--HIDDEN PREHEADER TEXT BELOW-->
+<div style="display: none; max-height: 0px; overflow: hidden; font-size: 1px; color: #000000;">Dark Certificate Example v3</div>
+
+<div style="display: none; max-height: 0px; overflow: hidden;">&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?</div>
+<!--HIDDEN PREHEADER TEXT END-->
+<!-- Master Table Wrapper Begin #c1c1c1-->
+<table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#ffffff">
+  <tbody>
+    <tr>
+      <td align="center">
+<!-- Top Content Table Begin -->
+        <table class="responsive90">
+          <tbody>
+            <tr>
+              <td>
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:650px" width="650">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/top_with_logo.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+<!-- Main Content Begin -->
+                <table align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive90" style="width:650px; background-color:#000000" width="650">
+                  <tbody>
+                    <tr>                    
+                      <td align="center">
+                        <table align="center" bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:612px; background-color:#000000" width="612">
+                        <tbody>
+<!-- Header One Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">A Special Bernstein Presentation</td>
+                        </tr>
+<!-- Header One End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/title_head.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+
+<!-- Header Two Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:42px; line-height:44px;  padding-bottom: 10px; color:#ffffff; font-weight:bold">Event Name Here</td>
+                        </tr>
+<!-- Header Two End -->
+<!-- Header-Sub Two Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:38px; line-height:40px;  padding-bottom: 10px; color:#ffffff; font-weight:bold">Sub Event Name</td>
+                        </tr>
+<!-- Header-Sub Two End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/title_bttm.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+
+
+<!-- Mega Header One Three Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:58px; line-height:60px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">Large </td>
+                        </tr>
+<!-- Mega Header One End -->
+<!-- Mega Header Two Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:58px; line-height:60px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">Title</td>
+                        </tr>
+<!-- Mega Header Two End -->
+<!-- Sub-Header Three Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Exclusive Event</td>
+                        </tr>
+<!-- Sub-Header Three End -->
+<!-- Sub-Header Three Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Exclusive Event</td>
+                        </tr>
+<!-- Sub-Header Three End -->
+<!-- Sub-Header Three Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Exclusive Event</td>
+                        </tr>
+<!-- Sub-Header Three End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/middle_break.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+<!-- Mega Header One Three Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:58px; line-height:60px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">Large </td>
+                        </tr>
+<!-- Mega Header One End -->
+
+<!-- Sub-Header Three Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="center" style="text-align:center; padding:10px 0px 10px 0px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="400">
+                            <tbody>
+                              <tr style="width: 300px;" width="300">
+                                <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:normal; padding-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+<!-- Sub-Header Three End -->
+<!-- Date Begin -->
+                        <tr pardot-repeatable="" style="">
+                          <td align="center" style="text-align:center; padding:10px 0px 10px 0px;">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr style="width: 150px;" width="150">
+                                <td align="center" pardot-region="" style="text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial, sans-serif; font-size:32px; line-height:34px; color:#ffffff; font-weight:bold;" valign="top">02</td>
+                                <td align="center" pardot-region="" style="text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial, sans-serif; font-size:22px; line-height:18px; color:#ffffff; font-weight:normal" valign="center" width="15">&bullet;</td>
+                                <td align="center" pardot-region="" style="text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt; font-family:arial, sans-serif; font-size:32px; line-height:34px; color:#ffffff; font-weight:bold;" valign="top">14</td>
+                                <td align="center" pardot-region="" style="text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial, sans-serif; font-size:22px; line-height:18px; color:#ffffff; font-weight:normal" valign="center" width="15">&bullet;</td>                                
+                                <td align="center" pardot-region="" style="text-align:center;mso-table-lspace:0pt;mso-table-rspace:0pt;font-family:arial, sans-serif; font-size:32px; line-height:34px; color:#ffffff; font-weight:bold;" valign="top">2019</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+<!-- Date End -->
+<!-- Header Three Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">Hotel Stuff</td>
+                        </tr>
+<!-- Header Three End -->
+<!-- Sub-Header Three Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Hotel Information</td>
+                        </tr>
+<!-- Sub-Header Three End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/middle_break_v2.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+<!-- Header Four Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="center" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:28px; line-height:32px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">A Special Bernstein Presentation</td>
+                        </tr>
+<!-- Header Four End -->
+<!-- Sub-Header Four Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Please join us for an exclusive event</td>
+                        </tr>
+<!-- Sub-Header Four End -->
+<!-- Sub-Header Four Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">Please join us for an exclusive event</td>
+                        </tr>
+<!-- Sub-Header Four End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/middle_break_v2.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+<!-- Header Five Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="left" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">More Info Here</td>
+                        </tr>
+<!-- Header Five End -->
+<!-- Sub-Header Five Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="left" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">More Info Here</td>
+                        </tr>
+<!-- Sub-Header Five End -->
+<!-- Sub-Header Five Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="left" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:12px; line-height:14px; color:#ffffff; font-weight:normal; padding-bottom: 10px;">More Info Here</td>
+                        </tr>
+<!-- Sub-Header Five End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/middle_break_v2.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+<!-- Header Six Begin -->
+                        <tr pardot-removable="" style="">                   
+                          <td align="left" pardot-region="body-title" style="text-align:center; font-family:arial, sans-serif; font-size:22px; line-height:24px;  padding-bottom: 10px; color:#c68f0c; font-weight:bold">RSVP</td>
+                        </tr>
+<!-- Header Six End -->
+<!-- Sub-Header Six Begin -->
+                        <tr pardot-removable="" style="">
+                          <td align="left" pardot-region="body-subtitle" style="text-align:center; font-family:arial, sans-serif; font-size:14px; line-height:18px; color:#ffffff; font-weight:bold; padding-bottom: 10px;">More Info Here</td>
+                        </tr>
+<!-- Sub-Header Six End -->
+<!-- Button Begin -->
+                        <tr pardot-repeatable="" style="">
+                          <td align="center" style="padding: 15px">
+                            <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="padding:2px 2px">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" bgcolor="#c68f0c" pardot-region="cta-button" style="padding: 15px 18px; text-align:center; font-family:arial, sans-serif; font-size:12px; line-height:12px; font-weight:bold; color:#ffffff; text-transform:uppercase; background-color:#c68f0c;"><a href="#" style="color:#ffffff; text-decoration:none;" target="_blank">Learn More</a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+<!-- Button End -->
+<!-- Sub-Header One Begin -->
+
+                        <tr pardot-removable="" style="">
+                          <td align="center" pardot-region="" style="text-align:center;">
+
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/middle_break_v2.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>                 
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>                  
+                  </tbody>
+                </table>
+<!-- Image End-->
+
+                          </td>
+                        </tr>
+<!-- Sub-Header One End -->
+<!-- Two Buttons Begin  -->
+                        <tr pardot-repeatable="" style="">
+                          <td align="center">
+                          <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:500px; background-color:#000000" width="500">
+                            <tbody>
+                              <tr>
+                                <td align="center" style="padding-top:30px; padding-bottom: 50px">
+                                <table border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:500px" width="500">
+                                  <tbody>
+                                    <tr>
+                                      <td align="center">
+                                      <table border="0" cellpadding="0" cellspacing="0" class="responsive90" style="width:450px" width="450">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+<!--[if (gte mso 9)|(IE)]><table width="100%"><tr><td valign="top"><![endif]-->
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:200px" width="200">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%"><!-- CTA -->
+                                                    <tbody>
+                                                      <tr pardot-removable="" style="">
+                                                        <td align="center">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="175">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="center" bgcolor="#c68f0c" style="border: 2px solid #c68f0c; mso-border-top-alt:solid #c68f0c 1px; mso-border-right-alt:solid #c68f0c 1px; mso-border-bottom-alt:solid #c68f0c 1px; mso-border-left-alt:solid #c68f0c 1px; padding: 15px 18px;" width="200">
+                                                              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                <tbody>
+                                                                  <tr style="">
+                                                                    <td align="center" bgcolor="#c68f0c" pardot-region="CTA" style="font-size: 12px; font-family: Arial, sans-serif; color: #1e9bd7;  font-weight:bold; text-decoration: none; text-transform:uppercase; display: inline-block;"><a href="#" style="color: #ffffff; text-decoration: none; text-transform:uppercase;" target="_blank">RSVP</a></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+<!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]-->
+                                            <table align="right" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:200px" width="200">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="pt_25">
+                                                  <table border="0" cellpadding="0" cellspacing="0" width="100%"><!-- CTA -->
+                                                    <tbody>
+                                                      <tr pardot-removable="" style="">
+                                                        <td align="center">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="175">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="center" bgcolor="#c68f0c" style="border: 2px solid #c68f0c; mso-border-top-alt:solid #c68f0c 1px; mso-border-right-alt:solid #c68f0c 1px; mso-border-bottom-alt:solid #c68f0c 1px; mso-border-left-alt:solid #c68f0c 1px; padding: 15px 18px;" width="200">
+                                                              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                <tbody>
+                                                                  <tr style="">
+                                                                    <td align="center" bgcolor="#c68f0c" pardot-region="CTA" style="font-size: 12px; font-family: Arial, sans-serif; color: #ffffff;  font-weight:bold; text-decoration: none; text-transform:uppercase; display: inline-block;"><a href="#" style="color: #ffffff; text-decoration: none; text-transform:uppercase;" target="_blank">DECLINE</a></td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                          </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        </tr>
+<!-- Two Buttons End -->
+                        </tbody>
+                        </table>
+<!-- Image Begin-->
+                <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:650px" width="650">
+                  <tbody>
+                    <tr style="">
+                      <td align="center">
+                        <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+                          <tbody>
+                            <tr style="">
+                              <td align="center" pardot-region="ab_us_top_logo">
+                                <img alt="" border="0" class="img_max" src="./imgs/bttm.png" style="width:600px; display:block; border:none;" width="600">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="10">&nbsp;</td>
+                            </tr>                   
+                          </tbody>
+                        </table>                      
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="10">&nbsp;</td>
+                    </tr>                   
+                  </tbody>
+                </table>
+<!-- Image End-->
+                      </td>
+                    </tr>
+<!-- Footer Begin -->
+                    <tr pardot-removable="" style="">
+                      <td align="center">
+      <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:650px; background-color:#ffffff" width="650">
+        <tbody>
+          <tr>
+            <td align="center" style="padding-top:30px">
+            <table border="0" cellpadding="0" cellspacing="0" class="responsive" style="width:600px" width="600">
+              <tbody>
+                <tr>
+                  <td align="center">
+                  <table border="0" cellpadding="0" cellspacing="0" class="responsive90" style="width:550px" width="550">
+                    <tbody>
+                      <tr pardot-repeatable="" style="">
+                        <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="280">
+                          <tbody>
+                            <tr style="">
+                              <td pardot-region="LinkedIn"><a href="#" style="border:none" target="_blank"><img alt="" border="0" src="./imgs/LinkedIn_Gray_Square.png" style="width:44px; display:block; border:none;" width="44"></a></td>
+                              <td pardot-region="Twitter"><a href="#" style="border:none" target="_blank"><img alt="" border="0" src="./imgs/Twitter_Gray_Square.png" style="width:44px; display:block; border:none;" width="44"></a></td>
+                              <td pardot-region="AB Blog"><a href="#"style="border:none" target="_blank"><img alt="" border="0" src="./imgs/Blog_Gray_Square.png" style="width:44px; display:block; border:none;" width="44"></a></td>
+                              <td pardot-region="Facebook"><a href="#" style="border:none" target="_blank"><img alt="Facebook" border="0" src="./imgs/Facebook_Gray_Square.png" style="width:44px; display:block; border:none;" width="44"></a></td>
+                              <td pardot-region="YouTube"><a href="#" style="border:none" target="_blank"><img alt="" border="0" src="./imgs/YouTube_Gray_Square.png" style="width:44px; display:block; border:none;" width="44"></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                      <tr pardot-repeatable="" style="">
+                        <td pardot-region="disclaimer" style="padding:30px 0 60px 0; font-family:arial, sans-serif; font-size:11px; line-height:15px; color:#000001">Note: Please do not respond to this e-mail with account-related instructions. If you have any questions, please contact your Bernstein Advisor.<br>
+                        <br>
+                        This e-mail message is intended only for the named recipient(s) above. If you are not the intended recipient, you are hereby notified that any dissemination, distribution or copying of this e-mail and any attachment(s) is strictly prohibited. If you have received this e-mail in error, please immediately notify the sender by replying to this e-mail, and delete the message and any attachment(s) from your system. Thank you.<br>
+                        <br>
+                        To unsubscribe from this e-mail list, please <a href="%%unsubscribe%%" style="color:#1e9bd7; text-decoration:none" target="_blank">unsubscribe here.</a><br>
+                        <br>
+                        To view this e-mail as a web page, <a href="%%view_online%%" style="color:#7d2873; text-decoration:none" target="_blank">click here.</a><br>
+                        <br>
+                        &copy; %%current_year_YYYY%% AllianceBernstein L.P.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+                      </td>
+                    </tr>
+<!-- Footer End--> 
+                  </tbody>
+                </table>
+<!-- Main Content End -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<!-- Top Content Table End -->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- Master Table Wrapper End-->
+</body>
+</html>
